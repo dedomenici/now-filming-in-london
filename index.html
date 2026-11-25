@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Now Filming in London — Call Sheet</title>
+<meta name="description" content="Movies and TV shows currently filming in London, on a map: codenames, lamppost arrows, unit bases and sources. A daily call sheet.">
+<meta property="og:title" content="Now Filming in London">
+<meta property="og:description" content="Today's call sheet for every film & TV shoot spotted on London's streets.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect x='5' y='15' width='30' height='20' rx='2' fill='%23111'/%3E%3Cpath d='M5 15 L33 6 L35 11 L7 20 Z' fill='%23ffd400' stroke='%23111'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="sheet">
+
+<header class="callhead">
+  <div class="hcol left">
+    <div class="kv"><span>PRODUCTION</span><b>NOW FILMING IN LONDON</b></div>
+    <div class="kv"><span>PRODUCER</span><b>R. DEDOMENICI</b></div>
+    <div class="kv"><span>DIRECTOR</span><b>THE GENERAL PUBLIC</b></div>
+    <div class="kv"><span>LOCATION DEPT</span><b>REDDIT · X · LOCAL PAPERS · TRADES</b></div>
+  </div>
+  <div class="hcol mid">
+    <div class="stamp">CALL SHEET</div>
+    <h1>NOW FILMING<br>IN LONDON</h1>
+    <div class="day" id="dayline">DAY — OF ∞</div>
+    <div class="date" id="dateline">—</div>
+    <div class="closed">CLOSED SET? NOT FROM THE PAVEMENT.</div>
+  </div>
+  <div class="hcol right">
+    <div class="kv"><span>CREW CALL</span><b id="calltime">—</b></div>
+    <div class="kv"><span>WEATHER</span><b id="weather">checking the sky…</b></div>
+    <div class="kv"><span>SUNRISE / SUNSET</span><b id="sun">—</b></div>
+    <div class="kv"><span>NEAREST A&amp;E</span><b>ST THOMAS' (FOR CLAPPERBOARD FINGERS)</b></div>
+    <div class="kv"><span>SHEET UPDATED</span><b id="updated">—</b></div>
+  </div>
+</header>
+
+<section class="block">
+  <div class="bhead"><span>SC. 1</span> LOCATIONS MAP <em id="mapcount"></em></div>
+  <div class="legend" id="legend"></div>
+  <div id="map" role="region" aria-label="Map of London film shoots"></div>
+  <p class="fine">Pins marked ≈ are approximate: the exact street wasn't published, so they sit at the nearest named place. Low-confidence entries are spotter reports, not confirmed productions.</p>
+</section>
+
+<section class="block">
+  <div class="bhead"><span>SC. 2</span> SHOOTING SCHEDULE</div>
+  <div class="filters">
+    <label>TYPE <select id="fType"><option value="">ALL</option><option value="film">FILM</option><option value="tv">TV</option><option value="unknown">UNKNOWN</option></select></label>
+    <label>BOROUGH <select id="fBorough"><option value="">ALL</option></select></label>
+    <label>SEEN SINCE <input type="date" id="fDate"></label>
+    <label>CONFIDENCE <select id="fConf"><option value="">ALL</option><option value="high">HIGH</option><option value="medium">MEDIUM</option><option value="low">LOW</option></select></label>
+    <label class="chk"><input type="checkbox" id="fLive"> SHOOTING NOW ONLY</label>
+    <button id="fReset" type="button" data-goat="reset-filters">RESET</button>
+  </div>
+  <div class="tablewrap">
+  <table class="sched" id="sched">
+    <thead><tr><th>SC</th><th>TITLE / CODENAME</th><th>TYPE</th><th>SET / LOCATION</th><th>BOROUGH</th><th>DATES</th><th>SIGNAGE</th><th>CONF</th></tr></thead>
+    <tbody></tbody>
+  </table>
+  </div>
+</section>
+
+<div class="twocol">
+<section class="block">
+  <div class="bhead"><span>SC. 3</span> LAMPPOST ARROWS SPOTTED</div>
+  <p class="fine">Crews put coded arrows on lampposts so drivers find set (LOC), unit base (BASE) and technical vehicles (TECH). The code is usually the production's initials or working title.</p>
+  <div id="arrows" class="arrows"></div>
+</section>
+<section class="block">
+  <div class="bhead"><span>SC. 4</span> UNIT BASES &amp; WINNEBAGOS</div>
+  <table class="sched small" id="bases"><thead><tr><th></th><th>WHERE</th><th>FOR</th><th>DATE</th></tr></thead><tbody></tbody></table>
+  <div class="bhead sub">PARKING SUSPENSIONS &amp; RESIDENT LETTERS</div>
+  <ul id="parking" class="parking"></ul>
+</section>
+</div>
+
+<section class="block">
+  <div class="bhead"><span>SC. 5</span> CREW LIST</div>
+  <table class="crew" id="crew"><thead><tr><th>DEPT</th><th>ROLE</th><th>NAME</th><th>CALL</th></tr></thead><tbody></tbody></table>
+</section>
+
+<section class="block">
+  <div class="bhead"><span>SC. 6</span> NOTES FROM THE 1st AD</div>
+  <ol class="notes">
+    <li>Be nice to security. They really don't know what it is. (They do.)</li>
+    <li>Don't stand in shot. Don't ask the runner who the star is. Do ask what the arrows say.</li>
+    <li>Spotted something? Post it on <a href="https://www.reddit.com/r/whatsfilminginlondon/" target="_blank" rel="noopener">r/whatsfilminginlondon</a> and it may appear here tomorrow.</li>
+    <li>Every entry links its sources. No invented codenames, no AI photos, no guessing dressed up as fact.</li>
+  </ol>
+  <div class="srcs" id="srcs"></div>
+</section>
+
+<footer class="foot">
+  <div>END OF CALL SHEET · PLEASE RECYCLE · <a href="data/digest-latest.md" data-goat="digest">TODAY'S DIGEST</a> · <a href="https://github.com/dedomenici/now-filming-in-london" target="_blank" rel="noopener">SOURCE ON GITHUB</a></div>
+  <div class="vibe">Vibecoded by <a href="https://dedomenici.com" target="_blank" rel="noopener">DeDomenici</a></div>
+</footer>
+</div>
+
+<div id="card" class="card" hidden>
+  <div class="cardin" role="dialog" aria-modal="true" aria-labelledby="cardTitle">
+    <button class="x" id="cardClose" aria-label="Close" type="button">✕</button>
+    <div id="cardBody"></div>
+  </div>
+</div>
+
+<script>window.goatcounter = { path: function (p) { return "now-filming" + (p === "/" || p === "/now-filming-in-london/" ? "" : p.replace(/^\/now-filming-in-london/, "")); } };</script>
+<script data-goatcounter="https://dedomenici.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+<script>
+(function () {
+  var queue = [], timer = 0;
+  function flush() { if (!window.goatcounter || typeof window.goatcounter.count !== "function") return false; while (queue.length) window.goatcounter.count(queue.shift()); return true; }
+  function send(p) { queue.push(p); if (flush() || timer) return; var n = 0; timer = setInterval(function () { n++; if (flush() || n > 40) { clearInterval(timer); timer = 0; } }, 250); }
+  window.__gcTrack = function (name, title) { send({ path: "now-filming-click-" + name, title: title || name, event: true }); };
+  document.addEventListener("click", function (ev) {
+    var t = ev.target && ev.target.closest && ev.target.closest("[data-goat]");
+    if (t) window.__gcTrack(t.getAttribute("data-goat"), t.getAttribute("data-goat-title") || t.getAttribute("data-goat"));
+  }, true);
+})();
+</script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="assets/icons.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

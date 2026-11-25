@@ -1,0 +1,1091 @@
+{
+ "app": "Now Filming in London",
+ "last_updated": "2026-11-25T01:30:00Z",
+ "previous_update": null,
+ "notes": "Only real, sourced sightings. 'approx' pins are placed at the nearest named place when the exact street wasn't published. Confidence: high = trade/official or multiple dated sources; medium = single press source or strong signage match; low = unidentified spotter report.",
+ "sources_checked": [
+  {
+   "name": "Reddit r/whatsfilminginlondon (.json via fetch)",
+   "status": "worked"
+  },
+  {
+   "name": "Reddit r/london, r/LondonSocialClub, r/CasualUK search (.json via curl)",
+   "status": "blocked from box IP (Reddit 'Blocked' page); use a fetch tool instead"
+  },
+  {
+   "name": "X public search",
+   "status": "worked but noisy; mostly trivia and old shoots"
+  },
+  {
+   "name": "Facebook groups (e.g. Crouch End Appreciation Society)",
+   "status": "login wall"
+  },
+  {
+   "name": "Local news (Camden New Journal, MyLondon, londonstreets.uk, Lee Manor Society)",
+   "status": "worked"
+  },
+  {
+   "name": "Trade (Screen Daily UK production list, Deadline, Variety, Film London monthly)",
+   "status": "worked"
+  }
+ ],
+ "shoots": [
+  {
+   "id": "beatles-clover",
+   "title": "The Beatles – A Four-Film Cinematic Event",
+   "working_title": "CLOVER",
+   "codenames": [
+    "CLOVER",
+    "CP Film Productions Ltd (company on resident letters)"
+   ],
+   "company": "Neal Street Productions / Sony Pictures (CP Film Productions Ltd)",
+   "type": "film",
+   "status": "filming",
+   "confidence": "high",
+   "cast": "Harris Dickinson, Paul Mescal, Barry Keoghan, Joseph Quinn; dir. Sam Mendes",
+   "summary": "Sam Mendes's four Beatles films. Resident letters for a 1960s driving scene at Fitzroy Square on Fri 27 Nov (10:00–16:00, period cars, 3-minute traffic holds). A casting-portal call also lists St John's Wood shoot days on 26, 27 and 30 Nov.",
+   "dates": {
+    "first_seen": "2026-11-03",
+    "last_seen": "2026-11-23",
+    "expected": [
+     "2026-11-26",
+     "2026-11-27",
+     "2026-11-30"
+    ]
+   },
+   "locations": [
+    {
+     "name": "Fitzroy Square, Fitzrovia",
+     "borough": "Camden",
+     "lat": 51.52299,
+     "lng": -0.1395,
+     "kind": "set",
+     "date": "2026-11-27",
+     "note": "Driving scene with period action vehicles, ~10am–4pm. Traffic held up to 3 min on Fitzroy St, Conway St, Grafton Way.",
+     "approx": false
+    },
+    {
+     "name": "St John's Wood (exact streets not published)",
+     "borough": "Westminster",
+     "lat": 51.532,
+     "lng": -0.1782,
+     "kind": "set",
+     "date": "2026-11-26",
+     "note": "'CLOVER' supporting-artist call for 26, 27 and 30 Nov. Pin placed at Abbey Road as an approximate marker only.",
+     "approx": true
+    },
+    {
+     "name": "Dacre Arms, Kingswood Place, Lee",
+     "borough": "Lewisham",
+     "lat": 51.46096,
+     "lng": 0.00335,
+     "kind": "set",
+     "date": "2026-11-03",
+     "note": "Earlier shoot (3 Nov), 11am–midnight, 30 extras, period cars. Belmont Park & Kingswood Place closed.",
+     "approx": false
+    }
+   ],
+   "photos": [],
+   "signage": [
+    {
+     "text": "CLOVER",
+     "colour": "on resident flyer",
+     "where": "Lee, SE13 (flyer)",
+     "date": "2026-11-03",
+     "source": "Lee Manor Society"
+    }
+   ],
+   "parking_notes": "Camden suspended 53 parking bays around Fitzroy Square for Fri 27 Nov 'to clear modern vehicles … and situate supporting technical vehicles'.",
+   "references": [
+    {
+     "title": "Fab Four in Fitzrovia? Vintage cars on way for film 'set in 1960s'",
+     "publisher": "Camden New Journal",
+     "date": "2026-11-23",
+     "url": "https://www.camdennewjournal.co.uk/article/fab-four-in-fitzrovia-vintage-cars-on-way-for-film-set-in-1960s"
+    },
+    {
+     "title": "The Beatles are coming to Lee!",
+     "publisher": "Lee Manor Society",
+     "date": "2026-11-04",
+     "url": "https://leemanorsociety.org/the-beatles-are-coming-to-lee/"
+    },
+    {
+     "title": "Now Filming in London — November 2026 update ('CLOVER' St John's Wood dates)",
+     "publisher": "Project Casting",
+     "date": "2026-11",
+     "url": "https://projectcasting.com/blog/casting-calls-acting-auditions/london/now-filming-in-london"
+    },
+    {
+     "title": "2026 film and HETV productions shooting in the UK",
+     "publisher": "Screen Daily",
+     "date": "2026-11-24",
+     "url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    }
+   ]
+  },
+  {
+   "id": "clay",
+   "title": "C.L.A.Y.",
+   "working_title": "CLAY",
+   "codenames": [
+    "CLAY (per resident letter & crew)"
+   ],
+   "company": "Clay Pictures",
+   "type": "film",
+   "status": "filming",
+   "confidence": "high",
+   "cast": "Nicolas Cage, Michael Sheen, Brenton Thwaites, Erin Moriarty; dir. Simon Afram",
+   "summary": "Nic Cage cyber-thriller ('Clowns Laughing At You'). Car-crash aftermath on hydraulic rigs at Union St / Great Suffolk St on 14 Nov; a SWAT raid at Lincoln's Inn on Sun 15 Nov; Cage photographed on a crash scene on 18 Nov.",
+   "dates": {
+    "first_seen": "2026-11-03",
+    "last_seen": "2026-11-18",
+    "expected": []
+   },
+   "locations": [
+    {
+     "name": "Union St × Great Suffolk St, Southwark",
+     "borough": "Southwark",
+     "lat": 51.50345,
+     "lng": -0.10095,
+     "kind": "set",
+     "date": "2026-11-14",
+     "note": "Crashed cars on hydraulic rigs with fake glass. Residents got a letter naming 'CLAY'.",
+     "approx": false
+    },
+    {
+     "name": "Lincoln's Inn",
+     "borough": "Camden",
+     "lat": 51.51559,
+     "lng": -0.11213,
+     "kind": "set",
+     "date": "2026-11-15",
+     "note": "SWAT team rushing a building. Same trucks as Southwark the day before.",
+     "approx": false
+    },
+    {
+     "name": "Lincoln's Inn – trucks parked up",
+     "borough": "Camden",
+     "lat": 51.5162,
+     "lng": -0.1137,
+     "kind": "unit_base",
+     "date": "2026-11-15",
+     "note": "Production trucks parked around the Inn (exact base spot approximate).",
+     "approx": true
+    }
+   ],
+   "photos": [
+    {
+     "thumb": "https://preview.redd.it/5mdlxd4nkl1i1.jpeg?width=640&crop=smart&auto=webp&s=e9b33bc2dd63e77233f2ca7df06f93706b8aef2f",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xw58vb/union_street_and_great_suffolk_street_junction_in/",
+     "credit": "u/AlanNeedsFixing on r/whatsfilminginlondon",
+     "caption": "Crash rig, Union St, 14 Nov"
+    },
+    {
+     "thumb": "https://preview.redd.it/292vmfinkr1i1.jpeg?width=640&crop=smart&auto=webp&s=ed0ee78d07c1f5d92dc139011ccb1c25690908bb",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xwthzd/lincolns_inn_sunday_15th_november/",
+     "credit": "u/bristol_filming on r/whatsfilminginlondon",
+     "caption": "Lincoln's Inn, 15 Nov"
+    }
+   ],
+   "signage": [
+    {
+     "text": "(none seen on the usual Blackfriars Rd lamppost)",
+     "colour": "—",
+     "where": "Union St / Blackfriars Rd",
+     "date": "2026-11-14",
+     "source": "Reddit"
+    }
+   ],
+   "parking_notes": "Resident letter in Southwark named the film 'CLAY'.",
+   "references": [
+    {
+     "title": "Union Street and Great Suffolk Street junction in Southwark",
+     "publisher": "r/whatsfilminginlondon",
+     "date": "2026-11-14",
+     "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xw58vb/union_street_and_great_suffolk_street_junction_in/"
+    },
+    {
+     "title": "Lincoln's Inn - Sunday 15th November",
+     "publisher": "r/whatsfilminginlondon",
+     "date": "2026-11-15",
+     "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xwthzd/lincolns_inn_sunday_15th_november/"
+    },
+    {
+     "title": "Nicolas Cage photographed filming a car-crash scene in London for C.L.A.Y.",
+     "publisher": "Creepy Catalog (Backgrid photos)",
+     "date": "2026-11-19",
+     "url": "https://creepycatalog.com/nicolas-cage-was-photographed-filming-a-car-crash-scene-in-london-for-c-l-a-y-a-cyber-thriller-with-michael-sheen/"
+    },
+    {
+     "title": "Brenton Thwaites & Erin Moriarty join Nicolas Cage in 'C.L.A.Y.'",
+     "publisher": "Deadline",
+     "date": "2026-11-03",
+     "url": "https://deadline.com/2026/11/brenton-thwaites-erin-moriarty-join-clay-filming-london-1237212225/"
+    },
+    {
+     "title": "What's On Screen and Filming: November 2026",
+     "publisher": "Film London",
+     "date": "2026-11-10",
+     "url": "https://filmlondon.org.uk/latest/whats-on-screen-and-filming-november-2026"
+    }
+   ]
+  },
+  {
+   "id": "naughty",
+   "title": "Naughty",
+   "working_title": null,
+   "codenames": [],
+   "company": "LuckyChap / Universal",
+   "type": "film",
+   "status": "filming",
+   "confidence": "high",
+   "cast": "Jennifer Aniston, Peter Dinklage (as Santa), Regina Hall; dir. Olivia Wilde",
+   "summary": "Christmas comedy. The Strand outside King's College was dressed with fake snow and ice on 9 and 14 Nov. Aniston's work is reportedly done by mid-December.",
+   "dates": {
+    "first_seen": "2026-11-09",
+    "last_seen": "2026-11-14",
+    "expected": [
+     "to mid-Dec (reported)"
+    ]
+   },
+   "locations": [
+    {
+     "name": "King's College London, Strand",
+     "borough": "Westminster",
+     "lat": 51.51148,
+     "lng": -0.11611,
+     "kind": "set",
+     "date": "2026-11-14",
+     "note": "Fake snow and ice laid on the pavements.",
+     "approx": false
+    }
+   ],
+   "photos": [],
+   "signage": [],
+   "parking_notes": "",
+   "references": [
+    {
+     "title": "London's chilly reception for Jennifer Aniston as they film new Christmas comedy",
+     "publisher": "Daily Mail (Backgrid photos)",
+     "date": "2026-11-14",
+     "url": "https://www.dailymail.com/tvshowbiz/article-16293017/London-chilly-reception-Jennifer-Aniston-new-Christmas-comedy.html"
+    },
+    {
+     "title": "Jennifer Aniston needs Peter Dinklage's Santa to testify in Naughty",
+     "publisher": "becoming.is",
+     "date": "2026-11-16",
+     "url": "https://becoming.is/jennifer-aniston-needs-peter-dinklages-santa-claus-to-testify-in-her-divorce-hearing-in-olivia-wildes-naughty/"
+    },
+    {
+     "title": "2026 film and HETV productions shooting in the UK",
+     "publisher": "Screen Daily",
+     "date": "2026-11-24",
+     "url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    }
+   ]
+  },
+  {
+   "id": "slow-horses-s8",
+   "title": "Slow Horses (Series 8)",
+   "working_title": "Piccadilly",
+   "codenames": [
+    "PIC (pic-car signs)",
+    "Piccadilly",
+    "'Embankment' (older code, per Reddit)"
+   ],
+   "company": "See-Saw Films / Apple TV",
+   "type": "tv",
+   "status": "wrapping",
+   "confidence": "medium",
+   "cast": "Gary Oldman, Jack Lowden, Olivia Cooke; dir. Adam Randall",
+   "summary": "Apple confirmed S8 was shooting in London on 16 Nov. Spotters had a Range Rover crash at Wembley Stadium around 19–22 Nov, and 'PIC' signs at Russell Square earlier. One unverified Reddit comment says the director posted a wrap around 22 Nov, so it's probably done.",
+   "dates": {
+    "first_seen": "2026-10-31",
+    "last_seen": "2026-11-22",
+    "expected": []
+   },
+   "locations": [
+    {
+     "name": "Wembley Stadium (under the stairs)",
+     "borough": "Brent",
+     "lat": 51.55607,
+     "lng": -0.2796,
+     "kind": "set",
+     "date": "2026-11-21",
+     "note": "Glass panels built under the stairs; Range Rover crash filmed over several days.",
+     "approx": false
+    },
+    {
+     "name": "Russell Square",
+     "borough": "Camden",
+     "lat": 51.52305,
+     "lng": -0.12425,
+     "kind": "signage",
+     "date": "2026-11-08",
+     "note": "'PIC' picture-car signs + filming notice.",
+     "approx": false
+    },
+    {
+     "name": "Walthamstow High Street (rooftops)",
+     "borough": "Waltham Forest",
+     "lat": 51.58477,
+     "lng": -0.02017,
+     "kind": "set",
+     "date": "2026-10-31",
+     "note": "Lowden & Cooke rooftop scenes (Mail on Sunday footage). Earlier sighting.",
+     "approx": true
+    }
+   ],
+   "photos": [
+    {
+     "thumb": "https://preview.redd.it/urab40fhiz2i1.jpeg?width=640&crop=smart&auto=webp&s=6eb62981ef2bffbb5d35caa159ff780df29a9925",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y1zpnj/major_filming_outside_wembley_stadium/",
+     "credit": "u/ArcticBlitz919 on r/whatsfilminginlondon",
+     "caption": "Wembley crash set, 21 Nov"
+    }
+   ],
+   "signage": [
+    {
+     "text": "PIC",
+     "colour": "picture-car signs",
+     "where": "Russell Square",
+     "date": "2026-11-08",
+     "source": "Reddit"
+    }
+   ],
+   "parking_notes": "",
+   "references": [
+    {
+     "title": "Major filming outside Wembley stadium",
+     "publisher": "r/whatsfilminginlondon",
+     "date": "2026-11-21",
+     "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y1zpnj/major_filming_outside_wembley_stadium/"
+    },
+    {
+     "title": "Russell Square ('Pic is Piccadilly, the working title for Slow Horses')",
+     "publisher": "r/whatsfilminginlondon",
+     "date": "2026-11-08",
+     "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xqzcxs/russell_square/"
+    },
+    {
+     "title": "'Slow Horses' renewed for Seasons 9 and 10",
+     "publisher": "Variety",
+     "date": "2026-11-16",
+     "url": "https://variety.com/2026/tv/global/slow-horses-more-seasons-jack-lowden-1236948628/"
+    },
+    {
+     "title": "Jack Lowden filming Slow Horses on Walthamstow High Street",
+     "publisher": "Daily Mail",
+     "date": "2026-10-31",
+     "url": "https://www.dailymail.com/news/article-16255227/Slow-Horses-Jack-Lowden-left-dead-spy-drama.html"
+    },
+    {
+     "title": "Canada Water thread (comment: 'director posted that they wrapped yesterday')",
+     "publisher": "r/whatsfilminginlondon",
+     "date": "2026-11-22",
+     "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y1tqj4/filming_canada_water_update/"
+    }
+   ]
+  },
+  {
+   "id": "mosquito",
+   "title": "Mosquito (probable)",
+   "working_title": null,
+   "codenames": [],
+   "company": "20th Television / Hulu Original for Disney+",
+   "type": "tv",
+   "status": "filming",
+   "confidence": "medium",
+   "cast": "Nicholas Hoult, Daisy Edgar-Jones; writer Tony McNamara",
+   "summary": "A Disney+ drama blacked out The Queens pub in Crouch End with tents for night interiors, 13–19 Nov. Residents' letters said 'Disney' and Disney had announced Mosquito's UK shoot on 10 Nov. Press link the two, but the production hasn't confirmed it.",
+   "dates": {
+    "first_seen": "2026-11-10",
+    "last_seen": "2026-11-19",
+    "expected": []
+   },
+   "locations": [
+    {
+     "name": "The Queens, 26 Tottenham Lane, Crouch End",
+     "borough": "Haringey",
+     "lat": 51.58098,
+     "lng": -0.12192,
+     "kind": "set",
+     "date": "2026-11-16",
+     "note": "Pub closed 13–17 Nov; windows tented for day-for-night.",
+     "approx": false
+    }
+   ],
+   "photos": [
+    {
+     "thumb": "https://preview.redd.it/oseuhwmy3m1i1.jpeg?width=640&crop=smart&auto=webp&s=197b16deb23ff0d00571faddc0453ac7e244fd0d",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xw7wkx/filming_in_the_queens_head_crouch_end_today/",
+     "credit": "u/makkuro_kurosuke on r/whatsfilminginlondon",
+     "caption": "Tented windows at The Queens, 14 Nov"
+    }
+   ],
+   "signage": [],
+   "parking_notes": "Bays suspended on Tottenham Lane, Elder Ave, Middle Lane, Fairfield Rd and Weston Park. Road closures on Elder Ave and Fairfield Gdns (15–16 Nov) and traffic management on Topsfield Parade (16 Nov).",
+   "references": [
+    {
+     "title": "Disney+ filming shuts Crouch End roads and The Queens pub for a week",
+     "publisher": "londonstreets.uk",
+     "date": "2026-11-13",
+     "url": "https://londonstreets.uk/disney-filming-crouch-end-road-closures-queens-pub/"
+    },
+    {
+     "title": "Filming in The Queens Head Crouch End today",
+     "publisher": "r/whatsfilminginlondon",
+     "date": "2026-11-14",
+     "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xw7wkx/filming_in_the_queens_head_crouch_end_today/"
+    },
+    {
+     "title": "2026 film and HETV productions shooting in the UK (Mosquito: Nov-ongoing, UK)",
+     "publisher": "Screen Daily",
+     "date": "2026-11-24",
+     "url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    }
+   ]
+  },
+  {
+   "id": "mummy",
+   "title": "The Mummy: Book of the Dead",
+   "working_title": null,
+   "codenames": [],
+   "company": "Universal / Radio Silence / Project X / Rideback",
+   "type": "film",
+   "status": "filming",
+   "confidence": "high",
+   "cast": "Brendan Fraser, Rachel Weisz, John Hannah; dirs. Bettinelli-Olpin & Gillett",
+   "summary": "Rachel Weisz was photographed in period costume outside the British Museum on 4 Nov, and a West London action sequence was shot later in the month. Screen lists it as filming in London and Suffolk, ongoing.",
+   "dates": {
+    "first_seen": "2026-11-04",
+    "last_seen": "2026-11-14",
+    "expected": [
+     "ongoing"
+    ]
+   },
+   "locations": [
+    {
+     "name": "British Museum, Great Russell St",
+     "borough": "Camden",
+     "lat": 51.51931,
+     "lng": -0.12671,
+     "kind": "set",
+     "date": "2026-11-04",
+     "note": "Weisz in a yellow polka-dot skirt with a transistor radio.",
+     "approx": false
+    }
+   ],
+   "photos": [],
+   "signage": [],
+   "parking_notes": "",
+   "references": [
+    {
+     "title": "The Mummy 4 new set photos show off Rachel Weisz's costume",
+     "publisher": "SuperHeroHype (Splash News)",
+     "date": "2026-11-04",
+     "url": "https://www.superherohype.com/movies/704130-rachel-weisz-the-mummy-4-set-photos"
+    },
+    {
+     "title": "2026 film and HETV productions shooting in the UK",
+     "publisher": "Screen Daily",
+     "date": "2026-11-24",
+     "url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    }
+   ]
+  },
+  {
+   "id": "gentlemen-s3",
+   "title": "The Gentlemen (Series 3)",
+   "working_title": null,
+   "codenames": [],
+   "company": "Netflix (created by Guy Ritchie)",
+   "type": "tv",
+   "status": "filming",
+   "confidence": "high",
+   "cast": "Theo James, Kaya Scodelario, Saffron Burrows, Joely Richardson, Maya Jama",
+   "summary": "A black-tie ensemble scene was shot at Fenix, 80 Piccadilly, in early November. The cast has also been spotted in Kilburn.",
+   "dates": {
+    "first_seen": "2026-11-02",
+    "last_seen": "2026-11-05",
+    "expected": [
+     "ongoing"
+    ]
+   },
+   "locations": [
+    {
+     "name": "Fenix, 80 Piccadilly (opp. Green Park)",
+     "borough": "Westminster",
+     "lat": 51.5069,
+     "lng": -0.1421,
+     "kind": "set",
+     "date": "2026-11-04",
+     "note": "Black-tie scene, fight make-up on some cast.",
+     "approx": true
+    }
+   ],
+   "photos": [],
+   "signage": [],
+   "parking_notes": "",
+   "references": [
+    {
+     "title": "'The Gentlemen' Season 3 set photos reveal first look at Saffron Burrows",
+     "publisher": "What's on Netflix (Backgrid)",
+     "date": "2026-11-05",
+     "url": "https://www.whats-on-netflix.com/news/the-gentlemen-season-3-set-photos-saffron-burrows/"
+    }
+   ]
+  },
+  {
+   "id": "ministry-of-time",
+   "title": "The Ministry of Time",
+   "working_title": null,
+   "codenames": [
+    "BOC / BOCLOC",
+    "Applecross"
+   ],
+   "company": "A24 for BBC One / iPlayer",
+   "type": "tv",
+   "status": "filming",
+   "confidence": "medium",
+   "cast": "Aoife Hinds, Billy Howle, Hong Chau, Adeel Akhtar",
+   "summary": "A Panavision trailer and lighting booms were seen by Northchurch Road with 'BOCLOC' signs on 10–11 Nov. A spotter says BOC is The Ministry of Time's code, and that 'Applecross' signs are used too. The BBC says filming is in and around London.",
+   "dates": {
+    "first_seen": "2026-11-10",
+    "last_seen": "2026-11-11",
+    "expected": []
+   },
+   "locations": [
+    {
+     "name": "De Beauvoir Rd / Northchurch Rd",
+     "borough": "Hackney/Islington",
+     "lat": 51.54202,
+     "lng": -0.08503,
+     "kind": "signage",
+     "date": "2026-11-10",
+     "note": "BOCLOC location arrows; Panavision trailer; lighting booms.",
+     "approx": true
+    }
+   ],
+   "photos": [],
+   "signage": [
+    {
+     "text": "BOCLOC",
+     "colour": "location arrow",
+     "where": "De Beauvoir Road",
+     "date": "2026-11-10",
+     "source": "Reddit"
+    },
+    {
+     "text": "APPLECROSS",
+     "colour": "unknown",
+     "where": "(reported alt. sign)",
+     "date": "2026-11-10",
+     "source": "Reddit comment"
+    }
+   ],
+   "parking_notes": "",
+   "references": [
+    {
+     "title": "DeBeauvoir Road",
+     "publisher": "r/whatsfilminginlondon",
+     "date": "2026-11-10",
+     "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xtrnou/debeauvoir_road/"
+    },
+    {
+     "title": "The Ministry of Time further casting announced",
+     "publisher": "BBC Media Centre",
+     "date": "2026-09-21",
+     "url": "https://www.bbc.co.uk/mediacentre/2026/the-ministry-of-time-further-casting"
+    }
+   ]
+  },
+  {
+   "id": "mobland-s3",
+   "title": "MobLand (Series 3)",
+   "working_title": null,
+   "codenames": [],
+   "company": "Paramount Television Studios / 101 Studios for Paramount+",
+   "type": "tv",
+   "status": "filming",
+   "confidence": "high",
+   "cast": "Tom Hardy, Helen Mirren, Pierce Brosnan",
+   "summary": "Series 3 started shooting in London around 20 Nov. No street locations have been reported yet; Series 2 used Fitzroy Square.",
+   "dates": {
+    "first_seen": "2026-11-20",
+    "last_seen": "2026-11-24",
+    "expected": [
+     "ongoing"
+    ]
+   },
+   "locations": [],
+   "photos": [],
+   "signage": [],
+   "parking_notes": "",
+   "references": [
+    {
+     "title": "'MobLand' Season 3 starts shooting as Season 2 finale drops",
+     "publisher": "Deadline",
+     "date": "2026-11-20",
+     "url": "https://deadline.com/2026/11/mobland-season-3-starts-shooting-finale-paramount-1237230065/"
+    },
+    {
+     "title": "2026 film and HETV productions shooting in the UK (Mobland: Nov-ongoing, London)",
+     "publisher": "Screen Daily",
+     "date": "2026-11-24",
+     "url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    }
+   ]
+  },
+  {
+   "id": "batman-2",
+   "title": "The Batman Part II",
+   "working_title": "Semper Vigilans (reported)",
+   "codenames": [
+    "Semper Vigilans (per Bleeding Cool tip, Oct)"
+   ],
+   "company": "Warner Bros / DC Studios",
+   "type": "film",
+   "status": "filming",
+   "confidence": "medium",
+   "cast": "Robert Pattinson, Colin Farrell, Sebastian Stan, Jayme Lawson; Steven Soderbergh completing for Matt Reeves",
+   "summary": "Final weeks of principal photography in London, with Screen listing it as June–ongoing. A Bleeding Cool tip linked a 'Semper Vigilans' closure at Central Hall Westminster in October. Earlier Gotham dressing appeared at St Paul's and Bank station.",
+   "dates": {
+    "first_seen": "2026-10-16",
+    "last_seen": "2026-11-24",
+    "expected": [
+     "final weeks"
+    ]
+   },
+   "locations": [
+    {
+     "name": "Methodist Central Hall, Storey's Gate",
+     "borough": "Westminster",
+     "lat": 51.50002,
+     "lng": -0.13004,
+     "kind": "set",
+     "date": "2026-10-24",
+     "note": "Reported closure of Storey's Gate; PR later said no filming that weekend. Treat as unconfirmed.",
+     "approx": false
+    }
+   ],
+   "photos": [],
+   "signage": [],
+   "parking_notes": "",
+   "references": [
+    {
+     "title": "The Batman: Part II to film opposite the Houses of Parliament",
+     "publisher": "Bleeding Cool",
+     "date": "2026-10-16",
+     "url": "https://bleedingcool.com/movies/the-batman-part-ii-to-film-opposite-the-houses-of-parliament/"
+    },
+    {
+     "title": "Robert Pattinson says 'The Batman Part II' is back up and running",
+     "publisher": "Deadline",
+     "date": "2026-10-26",
+     "url": "https://deadline.com/2026/10/robert-pattinson-says-the-batman-part-ii-is-filming-again-1237173078/"
+    },
+    {
+     "title": "2026 film and HETV productions shooting in the UK",
+     "publisher": "Screen Daily",
+     "date": "2026-11-24",
+     "url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    }
+   ]
+  },
+  {
+   "id": "lords-day",
+   "title": "The Lords' Day",
+   "working_title": null,
+   "codenames": [],
+   "company": "Bad Wolf for Netflix",
+   "type": "tv",
+   "status": "filming",
+   "confidence": "medium",
+   "cast": "Damson Idris, Timothy Spall, Gemma Whelan, Harry Lawtey",
+   "summary": "Siege-at-Parliament thriller, listed by Screen as August–ongoing in London. The last public street shoot was around the Palace of Westminster on 22–23 Aug. Nothing new has been reported in November.",
+   "dates": {
+    "first_seen": "2026-08-22",
+    "last_seen": "2026-11-24",
+    "expected": [
+     "ongoing"
+    ]
+   },
+   "locations": [
+    {
+     "name": "Palace of Westminster / Thames",
+     "borough": "Westminster",
+     "lat": 51.49939,
+     "lng": -0.12448,
+     "kind": "set",
+     "date": "2026-08-22",
+     "note": "Earlier shoot (Aug); kept as context.",
+     "approx": false
+    }
+   ],
+   "photos": [],
+   "signage": [],
+   "parking_notes": "",
+   "references": [
+    {
+     "title": "Netflix siege drama being filmed around Houses of Parliament",
+     "publisher": "BBC News",
+     "date": "2026-08",
+     "url": "https://www.bbc.co.uk/news/articles/cj9dmy1x918o"
+    },
+    {
+     "title": "2026 film and HETV productions shooting in the UK",
+     "publisher": "Screen Daily",
+     "date": "2026-11-24",
+     "url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    }
+   ]
+  },
+  {
+   "id": "unknown-canada-water",
+   "title": "UNIDENTIFIED – big shoot at Dock Shed, Canada Water",
+   "working_title": null,
+   "codenames": [],
+   "company": "unknown",
+   "type": "unknown",
+   "status": "wrapped",
+   "confidence": "low",
+   "cast": "",
+   "summary": "Big indoor office set with video village, 20–23 Nov. Extras arrived in corporate clothes (plus one violinist). Catering, parking and cast trailers were in the empty lot behind Tesco, with pink and luminous-yellow BASE/LOC signs, codes not recorded. Spotters guessed Batman (a GCPD car was asked about), but nothing confirms it. It loaded out on 23 Nov.",
+   "dates": {
+    "first_seen": "2026-11-20",
+    "last_seen": "2026-11-23",
+    "expected": []
+   },
+   "locations": [
+    {
+     "name": "Dock Shed, Deal Porters Way",
+     "borough": "Southwark",
+     "lat": 51.49614,
+     "lng": -0.04978,
+     "kind": "set",
+     "date": "2026-11-21",
+     "note": "Interior office set.",
+     "approx": false
+    },
+    {
+     "name": "Empty lot behind Tesco Canada Water",
+     "borough": "Southwark",
+     "lat": 51.4975,
+     "lng": -0.051,
+     "kind": "unit_base",
+     "date": "2026-11-21",
+     "note": "Catering, parking, cast trailers.",
+     "approx": true
+    }
+   ],
+   "photos": [
+    {
+     "thumb": "https://preview.redd.it/qnqbvbp6yx2i1.jpeg?width=640&crop=smart&auto=webp&s=7760657e92aa71d825979397fb84a2ceebab9337",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y1tqj4/filming_canada_water_update/",
+     "credit": "u/AcanthisittaPretty13 on r/whatsfilminginlondon",
+     "caption": "Dock Shed, 21 Nov"
+    }
+   ],
+   "signage": [
+    {
+     "text": "BASE / LOC (codes unrecorded)",
+     "colour": "pink + luminous yellow",
+     "where": "roads by Dock Shed",
+     "date": "2026-11-21",
+     "source": "Reddit"
+    }
+   ],
+   "parking_notes": "",
+   "references": [
+    {
+     "title": "Filming Canada Water Update",
+     "publisher": "r/whatsfilminginlondon",
+     "date": "2026-11-21",
+     "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y1tqj4/filming_canada_water_update/"
+    },
+    {
+     "title": "Filming in Canada Water",
+     "publisher": "r/whatsfilminginlondon",
+     "date": "2026-11-20",
+     "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y15g7k/filming_in_canada_water/"
+    }
+   ]
+  },
+  {
+   "id": "unknown-stockwell-bly",
+   "title": "UNIDENTIFIED – 'BLY' signs, Albert Square, Stockwell",
+   "working_title": "BLY?",
+   "codenames": [
+    "BLY (on 'BLY tech' signs)"
+   ],
+   "company": "unknown",
+   "type": "unknown",
+   "status": "recent",
+   "confidence": "low",
+   "cast": "",
+   "summary": "Evening shoot in a house's back garden on 24 Nov, the newest sighting. Signs read 'BLY tech', possibly the code plus a technical-vehicles arrow. (Not EastEnders: there's a real Albert Square in Stockwell.)",
+   "dates": {
+    "first_seen": "2026-11-24",
+    "last_seen": "2026-11-24",
+    "expected": []
+   },
+   "locations": [
+    {
+     "name": "Albert Square, Stockwell",
+     "borough": "Lambeth",
+     "lat": 51.47735,
+     "lng": -0.11998,
+     "kind": "signage",
+     "date": "2026-11-24",
+     "note": "'BLY tech' arrows.",
+     "approx": false
+    }
+   ],
+   "photos": [
+    {
+     "thumb": "https://preview.redd.it/twrnubba8n3i1.jpeg?width=640&crop=smart&auto=webp&s=b040753f7e22e44babd9aedc3be89979bbb3c165",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y4rxfc/albert_square_stockwell/",
+     "credit": "u/banana-books on r/whatsfilminginlondon",
+     "caption": "Albert Square, 24 Nov"
+    }
+   ],
+   "signage": [
+    {
+     "text": "BLY TECH",
+     "colour": "arrow sign",
+     "where": "Albert Square, SW8",
+     "date": "2026-11-24",
+     "source": "Reddit"
+    }
+   ],
+   "parking_notes": "",
+   "references": [
+    {
+     "title": "Albert Square, stockwell?",
+     "publisher": "r/whatsfilminginlondon",
+     "date": "2026-11-24",
+     "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y4rxfc/albert_square_stockwell/"
+    }
+   ]
+  },
+  {
+   "id": "unknown-apple-clerkenwell",
+   "title": "UNANNOUNCED Apple TV drama (rumoured 'The Bailey')",
+   "working_title": "'The Bailey' (unverified)",
+   "codenames": [],
+   "company": "Reportedly a Slow Horses-linked production company, for Apple TV",
+   "type": "tv",
+   "status": "filming",
+   "confidence": "low",
+   "cast": "Rumoured: Ashley Walters (unverified)",
+   "summary": "Night shoot at St John's Gate on 13 Nov; residents were told it was a new Apple TV project. Another crew on Coldharbour Lane, Brixton, on 16 Nov was also said to be a 'new Apple TV show'. Redditors call it 'The Bailey', but no trade or official source confirms that.",
+   "dates": {
+    "first_seen": "2026-11-13",
+    "last_seen": "2026-11-16",
+    "expected": []
+   },
+   "locations": [
+    {
+     "name": "St John's Gate, Clerkenwell",
+     "borough": "Islington",
+     "lat": 51.522,
+     "lng": -0.10256,
+     "kind": "set",
+     "date": "2026-11-13",
+     "note": "Night shoot.",
+     "approx": false
+    },
+    {
+     "name": "Coldharbour Lane, Brixton",
+     "borough": "Lambeth",
+     "lat": 51.46158,
+     "lng": -0.1137,
+     "kind": "set",
+     "date": "2026-11-16",
+     "note": "'New Apple TV show with big star apparently'.",
+     "approx": true
+    }
+   ],
+   "photos": [
+    {
+     "thumb": "https://preview.redd.it/9y54jk3xrl1i1.jpeg?width=640&crop=smart&auto=webp&s=6364dce6c1968f1d131c4ad7f64f4a831b64a3cd",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xw6858/filming_last_night_at_st_johns_gate/",
+     "credit": "u/niseko on r/whatsfilminginlondon",
+     "caption": "St John's Gate, 13 Nov"
+    },
+    {
+     "thumb": "https://preview.redd.it/4jss3kqvo02i1.jpeg?width=640&crop=smart&auto=webp&s=2566b9538298fdc13c4a1eff9c150ed1ecd4f889",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xxwy5q/coldharbour_lane_brixton_filming/",
+     "credit": "u/misoscoop on r/whatsfilminginlondon",
+     "caption": "Coldharbour Lane, 16 Nov"
+    }
+   ],
+   "signage": [],
+   "parking_notes": "",
+   "references": [
+    {
+     "title": "Filming last night at St John's Gate",
+     "publisher": "r/whatsfilminginlondon",
+     "date": "2026-11-14",
+     "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xw6858/filming_last_night_at_st_johns_gate/"
+    },
+    {
+     "title": "Coldharbour lane, Brixton filming",
+     "publisher": "r/whatsfilminginlondon",
+     "date": "2026-11-16",
+     "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xxwy5q/coldharbour_lane_brixton_filming/"
+    }
+   ]
+  },
+  {
+   "id": "unknown-mint-street-jj",
+   "title": "UNIDENTIFIED – neon-pink 'JJ' arrows, Mint Street Park",
+   "working_title": "JJ?",
+   "codenames": [
+    "JJ"
+   ],
+   "company": "unknown",
+   "type": "unknown",
+   "status": "recent",
+   "confidence": "low",
+   "cast": "",
+   "summary": "Neon-pink crew direction arrows marked 'JJ' around Mint Street Park, Borough, on 9 Nov. One commenter guessed 'the poop movie' (unidentified).",
+   "dates": {
+    "first_seen": "2026-11-09",
+    "last_seen": "2026-11-09",
+    "expected": []
+   },
+   "locations": [
+    {
+     "name": "Mint Street Park, Borough",
+     "borough": "Southwark",
+     "lat": 51.50223,
+     "lng": -0.09668,
+     "kind": "signage",
+     "date": "2026-11-09",
+     "note": "Neon pink 'JJ' arrows.",
+     "approx": false
+    }
+   ],
+   "photos": [
+    {
+     "thumb": "https://preview.redd.it/85hcyyz1js0i1.jpeg?width=640&crop=smart&auto=webp&s=12f5048e29c470e32e5562e47f5944baa0539665",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xsnhy4/mint_street_park/",
+     "credit": "u/rtts- on r/whatsfilminginlondon",
+     "caption": "Mint Street, 9 Nov"
+    }
+   ],
+   "signage": [
+    {
+     "text": "JJ",
+     "colour": "neon pink",
+     "where": "Mint Street Park area",
+     "date": "2026-11-09",
+     "source": "Reddit"
+    }
+   ],
+   "parking_notes": "",
+   "references": [
+    {
+     "title": "Mint Street park?",
+     "publisher": "r/whatsfilminginlondon",
+     "date": "2026-11-09",
+     "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xsnhy4/mint_street_park/"
+    }
+   ]
+  },
+  {
+   "id": "short-lea-bridge",
+   "title": "Short film – 'BTBASE' arrows, Lea Bridge Road",
+   "working_title": "BTB?",
+   "codenames": [
+    "BTBASE (= BTB + BASE)"
+   ],
+   "company": "unknown (short film)",
+   "type": "film",
+   "status": "wrapped",
+   "confidence": "low",
+   "cast": "",
+   "summary": "Neon arrows read 'BTBASE' (code BTB plus unit BASE) on 9–10 Nov. A commenter says it was a short film at the Good View takeaway, not a big production.",
+   "dates": {
+    "first_seen": "2026-11-09",
+    "last_seen": "2026-11-10",
+    "expected": []
+   },
+   "locations": [
+    {
+     "name": "Lea Bridge Road, Leyton (Good View takeaway area)",
+     "borough": "Waltham Forest",
+     "lat": 51.57143,
+     "lng": -0.02207,
+     "kind": "unit_base",
+     "date": "2026-11-10",
+     "note": "'BTBASE' neon arrows; exact spot not given.",
+     "approx": true
+    }
+   ],
+   "photos": [],
+   "signage": [
+    {
+     "text": "BTBASE",
+     "colour": "neon",
+     "where": "Lea Bridge Road",
+     "date": "2026-11-10",
+     "source": "Reddit"
+    }
+   ],
+   "parking_notes": "",
+   "references": [
+    {
+     "title": "Filming on Lea Bridge Road today and yesterday?",
+     "publisher": "r/whatsfilminginlondon",
+     "date": "2026-11-11",
+     "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xtuz4l/filmimg_on_lea_bridge_road_today_and_yesterday/"
+    }
+   ]
+  },
+  {
+   "id": "harry-potter-s2",
+   "title": "Harry Potter (HBO series, Season 2)",
+   "working_title": null,
+   "codenames": [],
+   "company": "HBO / Brontë Film and TV / Warner Bros TV",
+   "type": "tv",
+   "status": "filming",
+   "confidence": "medium",
+   "cast": "Dominic McLaughlin, Arabella Stanton, Alastair Stout",
+   "summary": "Studio-based at Leavesden, just outside London. Screen lists it as July 2025–ongoing; Project Casting says Season 2 is now shooting. Included as a nearby studio, not a street sighting.",
+   "dates": {
+    "first_seen": "2025-07",
+    "last_seen": "2026-11-24",
+    "expected": [
+     "ongoing"
+    ]
+   },
+   "locations": [
+    {
+     "name": "Warner Bros. Studios Leavesden (Herts)",
+     "borough": "outside London",
+     "lat": 51.68998,
+     "lng": -0.42282,
+     "kind": "set",
+     "date": "2026-11",
+     "note": "Studio stages.",
+     "approx": false
+    }
+   ],
+   "photos": [],
+   "signage": [],
+   "parking_notes": "",
+   "references": [
+    {
+     "title": "2026 film and HETV productions shooting in the UK",
+     "publisher": "Screen Daily",
+     "date": "2026-11-24",
+     "url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    }
+   ]
+  }
+ ]
+}
