@@ -33,6 +33,10 @@ for k, s in C.items():
     if ns: notes.append("new signage: " + ", ".join(sorted(ns)))
     for f in ("status", "confidence", "title", "working_title"):
         if s.get(f) != p.get(f): notes.append(f"{f}: {p.get(f)} → {s.get(f)}")
+    ni = len(s.get("images", [])) - len(p.get("images", p.get("photos", [])))
+    if ni > 0: notes.append(f"+{ni} spotter photo(s)")
+    newppl = {x["name"] for x in s.get("cast", []) + s.get("crew", [])} - {x["name"] for g in ("cast", "crew") if isinstance(p.get(g), list) for x in p[g] if isinstance(x, dict)}
+    if newppl: notes.append("look out for: " + ", ".join(sorted(newppl)))
     if len(s.get("references", [])) > len(p.get("references", [])): notes.append(f"+{len(s['references'])-len(p.get('references', []))} source(s)")
     if notes: changed.append((s, notes))
 for k, p in P.items():
@@ -73,7 +77,16 @@ if sg:
     x, s = sg[0]
     L.append(f"## 🟨 LAMPPOST ARROW OF THE DAY\n`{x['text']}` ({x.get('colour','')}) at {x['where']}, {x.get('date','')}, for {s['title']}.")
     L.append("")
-L.append("**Map:** https://dedomenici.github.io/now-filming-in-london/")
+tom = (datetime.date.fromisoformat(day) + datetime.timedelta(days=1)).isoformat()
+sched = [(l, s) for s in C.values() for l in s.get("locations", []) if day in l.get("schedule_dates", []) or tom in l.get("schedule_dates", [])]
+if sched:
+    L.append("## 📋 ON THE SCHEDULE (TODAY/TOMORROW)")
+    for l, s in sched:
+        ct = l.get("call_time", {})
+        hrs = f"{ct['start']}–{ct['end']} (reported)" if ct.get("start") else f"est. {s.get('typical_hours',{}).get('start','08:00')}–{s.get('typical_hours',{}).get('end','18:00')}"
+        L.append(f"- {', '.join(d for d in l['schedule_dates'] if d in (day, tom))}: **{s['title']}** at {l['name']} · {hrs}")
+    L.append("")
+L.append("**Map:** https://dedomenici.github.io/now-filming-in-london/ · **Plan a day:** https://dedomenici.github.io/now-filming-in-london/?plan=1")
 L.append("")
 L.append("_All entries link their sources. Low-confidence entries are spotter reports, not confirmed productions._")
 md = "\n".join(L) + "\n"

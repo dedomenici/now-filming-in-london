@@ -29,6 +29,7 @@
     <div class="day" id="dayline">DAY — OF ∞</div>
     <div class="date" id="dateline">—</div>
     <div class="closed">CLOSED SET? NOT FROM THE PAVEMENT.</div>
+    <button type="button" class="bigbtn" id="planBtn" data-goat="plan-open">▶ PLAN MY SET-SPOTTING DAY</button>
   </div>
   <div class="hcol right">
     <div class="kv"><span>CREW CALL</span><b id="calltime">—</b></div>
@@ -40,10 +41,26 @@
 </header>
 
 <section class="block">
-  <div class="bhead"><span>SC. 1</span> LOCATIONS MAP <em id="mapcount"></em></div>
+  <div class="bhead"><span>SC. 1</span> LOCATIONS MAP <em id="mapcount"></em><button type="button" class="minibtn" id="planBtn2" data-goat="plan-open-map">ITINERARY ▶</button></div>
   <div class="legend" id="legend"></div>
   <div id="map" role="region" aria-label="Map of London film shoots"></div>
   <p class="fine">Pins marked ≈ are approximate: the exact street wasn't published, so they sit at the nearest named place. Low-confidence entries are spotter reports, not confirmed productions.</p>
+</section>
+
+<section class="block plan" id="planSec" hidden>
+  <div class="bhead"><span>SC. 1A</span> MOVEMENT ORDER: YOUR SET-SPOTTING DAY <em>UNIT: YOU</em></div>
+  <form class="filters planform" id="planForm" onsubmit="return false">
+    <label>SHOOT DATE <input type="date" id="pDate"></label>
+    <label>UNIT CALL (START) <select id="pStart"></select></label>
+    <label>CALL TIME <input type="time" id="pTime" value="09:00"></label>
+    <label>HOURS <select id="pHours"><option>2</option><option>3</option><option>4</option><option>6</option><option selected>8</option><option>10</option><option>14</option></select></label>
+    <label>MAX STOPS <select id="pStops"><option>2</option><option>3</option><option>4</option><option selected>5</option><option>8</option></select></label>
+    <label>INCLUDE SIGHTINGS FROM LAST <select id="pRecent"><option value="0">0 DAYS</option><option value="3">3 DAYS</option><option value="7" selected>7 DAYS</option><option value="14">14 DAYS</option></select></label>
+    <button type="button" id="pGo" data-goat="plan-generate">ACTION! ▶</button>
+  </form>
+  <div id="planOut"></div>
+  <div class="etiquette"><b>SET ETIQUETTE (THE 1st AD IS WATCHING):</b> Stand well back and behind the marshals. Don't block crew, cables, kit or the camera's eyeline. No flash, ever. Keep quiet when you hear "ROLLING!". Residents live here, so don't block driveways or doorsteps, and don't sit on anyone's wall. If a runner asks you to wait, wait. Then say thank you and go buy something from the local caff.</div>
+  <div class="planbtns"><button type="button" id="pPrint" data-goat="plan-print">🖨 PRINT</button><button type="button" id="pCopy" data-goat="plan-copy">📋 COPY</button><button type="button" id="pShare" data-goat="plan-share">🔗 SHARE LINK</button><span id="pMsg" class="fine"></span></div>
 </section>
 
 <section class="block">
@@ -58,7 +75,7 @@
   </div>
   <div class="tablewrap">
   <table class="sched" id="sched">
-    <thead><tr><th>SC</th><th>TITLE / CODENAME</th><th>TYPE</th><th>SET / LOCATION</th><th>BOROUGH</th><th>DATES</th><th>SIGNAGE</th><th>CONF</th></tr></thead>
+    <thead><tr><th>SC</th><th>📷</th><th>TITLE / CODENAME</th><th>TYPE</th><th>SET / LOCATION · TIMES</th><th>BOROUGH</th><th>DATES</th><th>SIGNAGE</th><th>CONF</th></tr></thead>
     <tbody></tbody>
   </table>
   </div>
@@ -123,6 +140,7 @@
 </script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
 <script src="assets/icons.js"></script>
+<script src="assets/itinerary.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

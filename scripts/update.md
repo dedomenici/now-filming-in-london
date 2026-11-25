@@ -19,6 +19,17 @@ cp data/shoots.json data/shoots.prev.json      # snapshot for the digest diff
 6. **Facebook** groups and pages are behind a login wall, so skip them. Only use them when a news story quotes them.
 
 ## 2. Edit `data/shoots.json`
+Fields on each shoot (the validator enforces them):
+- **`images`**: `[{thumb, link, credit, platform, date, caption, large}]`. These are crowdsourced spotter photos only. Use Reddit post galleries (the 640px `preview.redd.it` URL) and comment images (`preview.redd.it/...width=NNNN&format=pjpg...` from comment bodies; set `large: true` because they're full-size). Use public X posts (`pbs.twimg.com` media from the post's author) and local news where reuse is OK. Credit `u/name` or `@handle` and link the exact post or comment. Never use agency (Backgrid, Splash or Getty) or AI images; link out to those instead. Hotlinked thumbnails only: no re-hosting.
+- **`cast`** and **`crew`**: `[{name, role, status: confirmed|reported, source_url}]`. `confirmed` means officially or trade announced as attached. `reported` means a press sighting or a single unofficial report. For unknown productions, use empty lists plus a `cast_note`. Never add a person without a source.
+- **`typical_hours`**: `{start, end, basis: estimate|source, note, source_url?, days_off?}`. The default is an estimate of 08:00–18:00. Add `days_off: ["Fri","Sat"]` when it's sourced, as for Slow Horses.
+- **Per location**:
+  - `call_time`: `{date?, start?, end?, status, source_url, note}`, only when published, e.g. a residents' letter.
+  - `schedule_dates`: `[YYYY-MM-DD]` for announced shoot days.
+  - `night: true`: set when a location was seen shooting after dark.
+
+  These fields drive the "Plan my set-spotting day" itinerary. A location with `schedule_dates` only appears on those dates. Other locations appear for `recentDays` after their `date`.
+
 - Add new productions or sightings, and add new `locations` (lat/lng from Nominatim; mark `approx: true` when the exact street isn't known), `signage`, `photos` and `references`, each with a URL and date.
 - Never invent a title, codename, location or photo. If the production is unknown, use `UNIDENTIFIED – …` with `confidence: low`.
 - Confidence:

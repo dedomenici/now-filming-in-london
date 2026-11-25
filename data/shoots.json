@@ -1,7 +1,7 @@
 {
  "app": "Now Filming in London",
- "last_updated": "2026-11-25T01:30:00Z",
- "previous_update": null,
+ "last_updated": "2026-11-25T01:39:00Z",
+ "previous_update": "2026-11-25T01:30:00Z",
  "notes": "Only real, sourced sightings. 'approx' pins are placed at the nearest named place when the exact street wasn't published. Confidence: high = trade/official or multiple dated sources; medium = single press source or strong signage match; low = unidentified spotter report.",
  "sources_checked": [
   {
@@ -14,7 +14,7 @@
   },
   {
    "name": "X public search",
-   "status": "worked but noisy; mostly trivia and old shoots"
+   "status": "worked but noisy; no usable spotter photos found this round"
   },
   {
    "name": "Facebook groups (e.g. Crouch End Appreciation Society)",
@@ -27,6 +27,10 @@
   {
    "name": "Trade (Screen Daily UK production list, Deadline, Variety, Film London monthly)",
    "status": "worked"
+  },
+  {
+   "name": "Instagram / TikTok public posts",
+   "status": "not reachable without login from the box; only used when a Reddit/news post links them"
   }
  ],
  "shoots": [
@@ -42,7 +46,32 @@
    "type": "film",
    "status": "filming",
    "confidence": "high",
-   "cast": "Harris Dickinson, Paul Mescal, Barry Keoghan, Joseph Quinn; dir. Sam Mendes",
+   "cast": [
+    {
+     "name": "Harris Dickinson",
+     "role": "John Lennon",
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "Paul Mescal",
+     "role": "Paul McCartney",
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "Barry Keoghan",
+     "role": "Ringo Starr",
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "Joseph Quinn",
+     "role": "George Harrison",
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    }
+   ],
    "summary": "Sam Mendes's four Beatles films. Resident letters for a 1960s driving scene at Fitzroy Square on Fri 27 Nov (10:00–16:00, period cars, 3-minute traffic holds). A casting-portal call also lists St John's Wood shoot days on 26, 27 and 30 Nov.",
    "dates": {
     "first_seen": "2026-11-03",
@@ -62,7 +91,18 @@
      "kind": "set",
      "date": "2026-11-27",
      "note": "Driving scene with period action vehicles, ~10am–4pm. Traffic held up to 3 min on Fitzroy St, Conway St, Grafton Way.",
-     "approx": false
+     "approx": false,
+     "call_time": {
+      "date": "2026-11-27",
+      "start": "10:00",
+      "end": "16:00",
+      "status": "reported",
+      "source_url": "https://www.camdennewjournal.co.uk/article/fab-four-in-fitzrovia-vintage-cars-on-way-for-film-set-in-1960s",
+      "note": "'Roughly 10am to 4pm' per the production's letter to residents (Camden New Journal)."
+     },
+     "schedule_dates": [
+      "2026-11-27"
+     ]
     },
     {
      "name": "St John's Wood (exact streets not published)",
@@ -72,7 +112,17 @@
      "kind": "set",
      "date": "2026-11-26",
      "note": "'CLOVER' supporting-artist call for 26, 27 and 30 Nov. Pin placed at Abbey Road as an approximate marker only.",
-     "approx": true
+     "approx": true,
+     "schedule_dates": [
+      "2026-11-26",
+      "2026-11-27",
+      "2026-11-30"
+     ],
+     "call_time": {
+      "note": "Shoot dates from a casting-portal call; hours not published.",
+      "status": "reported",
+      "source_url": "https://projectcasting.com/blog/casting-calls-acting-auditions/london/now-filming-in-london"
+     }
     },
     {
      "name": "Dacre Arms, Kingswood Place, Lee",
@@ -82,10 +132,20 @@
      "kind": "set",
      "date": "2026-11-03",
      "note": "Earlier shoot (3 Nov), 11am–midnight, 30 extras, period cars. Belmont Park & Kingswood Place closed.",
-     "approx": false
+     "approx": false,
+     "call_time": {
+      "date": "2026-11-03",
+      "start": "11:00",
+      "end": "23:59",
+      "status": "reported",
+      "source_url": "https://leemanorsociety.org/the-beatles-are-coming-to-lee/",
+      "note": "11am until midnight (resident flyer)."
+     },
+     "schedule_dates": [
+      "2026-11-03"
+     ]
     }
    ],
-   "photos": [],
    "signage": [
     {
      "text": "CLOVER",
@@ -121,7 +181,28 @@
      "date": "2026-11-24",
      "url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
     }
-   ]
+   ],
+   "crew": [
+    {
+     "name": "Sam Mendes",
+     "role": "Director",
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "Neal Street Productions",
+     "role": "Production company",
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    }
+   ],
+   "typical_hours": {
+    "start": "08:00",
+    "end": "18:00",
+    "basis": "estimate",
+    "note": "Typical London location day: crew call ~07:00, shooting ~08:00–18:00. Unit bases are busiest early morning."
+   },
+   "images": []
   },
   {
    "id": "clay",
@@ -134,7 +215,50 @@
    "type": "film",
    "status": "filming",
    "confidence": "high",
-   "cast": "Nicolas Cage, Michael Sheen, Brenton Thwaites, Erin Moriarty; dir. Simon Afram",
+   "cast": [
+    {
+     "name": "Nicolas Cage",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "Michael Sheen",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "Jordi Mollà",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "Brenton Thwaites",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://deadline.com/2026/11/brenton-thwaites-erin-moriarty-join-clay-filming-london-1237212225/"
+    },
+    {
+     "name": "Erin Moriarty",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://deadline.com/2026/11/brenton-thwaites-erin-moriarty-join-clay-filming-london-1237212225/"
+    },
+    {
+     "name": "Emilio Sakraya",
+     "role": null,
+     "status": "reported",
+     "source_url": "https://creepycatalog.com/nicolas-cage-was-photographed-filming-a-car-crash-scene-in-london-for-c-l-a-y-a-cyber-thriller-with-michael-sheen/"
+    },
+    {
+     "name": "Adrian Topol",
+     "role": null,
+     "status": "reported",
+     "source_url": "https://creepycatalog.com/nicolas-cage-was-photographed-filming-a-car-crash-scene-in-london-for-c-l-a-y-a-cyber-thriller-with-michael-sheen/"
+    }
+   ],
    "summary": "Nic Cage cyber-thriller ('Clowns Laughing At You'). Car-crash aftermath on hydraulic rigs at Union St / Great Suffolk St on 14 Nov; a SWAT raid at Lincoln's Inn on Sun 15 Nov; Cage photographed on a crash scene on 18 Nov.",
    "dates": {
     "first_seen": "2026-11-03",
@@ -171,20 +295,6 @@
      "date": "2026-11-15",
      "note": "Production trucks parked around the Inn (exact base spot approximate).",
      "approx": true
-    }
-   ],
-   "photos": [
-    {
-     "thumb": "https://preview.redd.it/5mdlxd4nkl1i1.jpeg?width=640&crop=smart&auto=webp&s=e9b33bc2dd63e77233f2ca7df06f93706b8aef2f",
-     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xw58vb/union_street_and_great_suffolk_street_junction_in/",
-     "credit": "u/AlanNeedsFixing on r/whatsfilminginlondon",
-     "caption": "Crash rig, Union St, 14 Nov"
-    },
-    {
-     "thumb": "https://preview.redd.it/292vmfinkr1i1.jpeg?width=640&crop=smart&auto=webp&s=ed0ee78d07c1f5d92dc139011ccb1c25690908bb",
-     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xwthzd/lincolns_inn_sunday_15th_november/",
-     "credit": "u/bristol_filming on r/whatsfilminginlondon",
-     "caption": "Lincoln's Inn, 15 Nov"
     }
    ],
    "signage": [
@@ -228,6 +338,100 @@
      "date": "2026-11-10",
      "url": "https://filmlondon.org.uk/latest/whats-on-screen-and-filming-november-2026"
     }
+   ],
+   "crew": [
+    {
+     "name": "Simon Afram",
+     "role": "Writer-director",
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "Georgette Turner",
+     "role": "Producer",
+     "status": "reported",
+     "source_url": "https://creepycatalog.com/nicolas-cage-was-photographed-filming-a-car-crash-scene-in-london-for-c-l-a-y-a-cyber-thriller-with-michael-sheen/"
+    }
+   ],
+   "typical_hours": {
+    "start": "08:00",
+    "end": "18:00",
+    "basis": "estimate",
+    "note": "Typical London location day: crew call ~07:00, shooting ~08:00–18:00. Unit bases are busiest early morning."
+   },
+   "images": [
+    {
+     "thumb": "https://preview.redd.it/5mdlxd4nkl1i1.jpeg?width=640&crop=smart&auto=webp&s=e9b33bc2dd63e77233f2ca7df06f93706b8aef2f",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xw58vb/union_street_and_great_suffolk_street_junction_in/",
+     "credit": "u/AlanNeedsFixing",
+     "platform": "reddit",
+     "date": "2026-11-14",
+     "caption": "Crash rig, Union St, 14 Nov",
+     "large": false
+    },
+    {
+     "thumb": "https://preview.redd.it/292vmfinkr1i1.jpeg?width=640&crop=smart&auto=webp&s=ed0ee78d07c1f5d92dc139011ccb1c25690908bb",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xwthzd/lincolns_inn_sunday_15th_november/",
+     "credit": "u/bristol_filming",
+     "platform": "reddit",
+     "date": "2026-11-15",
+     "caption": "Lincoln's Inn, 15 Nov",
+     "large": false
+    },
+    {
+     "thumb": "https://preview.redd.it/kdilm4inkr1i1.jpeg?width=640&crop=smart&auto=webp&s=e8c769bb4475773aa4ad71018351bfbf35824dc2",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xwthzd/lincolns_inn_sunday_15th_november/",
+     "credit": "u/bristol_filming",
+     "platform": "reddit",
+     "date": "2026-11-15",
+     "caption": "Lincoln’s Inn - Sunday 15th November",
+     "large": false
+    },
+    {
+     "thumb": "https://preview.redd.it/7okm4dinkr1i1.jpeg?width=640&crop=smart&auto=webp&s=537f4916fa5624176307a4f29041529eab78c861",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xwthzd/lincolns_inn_sunday_15th_november/",
+     "credit": "u/bristol_filming",
+     "platform": "reddit",
+     "date": "2026-11-15",
+     "caption": "Lincoln’s Inn - Sunday 15th November",
+     "large": false
+    },
+    {
+     "thumb": "https://preview.redd.it/9wj5giqtcs1i1.jpeg?width=5712&format=pjpg&auto=webp&s=11770a1f2769e596c7fc95f2efbf7812ca3066f8",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xwthzd/lincolns_inn_sunday_15th_november/19sodp5xzvm1v/",
+     "credit": "u/brayshizzle",
+     "platform": "reddit (comment)",
+     "date": "2026-11-15",
+     "caption": "Comment photo",
+     "large": true
+    },
+    {
+     "thumb": "https://preview.redd.it/33acpd4nkl1i1.jpeg?width=640&crop=smart&auto=webp&s=e64a1234f6b58582d9b4601233f22c6ec5fe149b",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xw58vb/union_street_and_great_suffolk_street_junction_in/",
+     "credit": "u/AlanNeedsFixing",
+     "platform": "reddit",
+     "date": "2026-11-14",
+     "caption": "Union Street and Great Suffolk Street junction in Southwark",
+     "large": false
+    },
+    {
+     "thumb": "https://preview.redd.it/2l8vid4nkl1i1.jpeg?width=640&crop=smart&auto=webp&s=bd4f7fec490981d34c7c7966cd8af7026754ffc6",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xw58vb/union_street_and_great_suffolk_street_junction_in/",
+     "credit": "u/AlanNeedsFixing",
+     "platform": "reddit",
+     "date": "2026-11-14",
+     "caption": "Union Street and Great Suffolk Street junction in Southwark",
+     "large": false
+    },
+    {
+     "thumb": "https://preview.redd.it/g7ejk1ya5m1i1.jpeg?width=4284&format=pjpg&auto=webp&s=ecb92f014da1aab1179b04724c2b915ac847727b",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xw58vb/union_street_and_great_suffolk_street_junction_in/19smtt21ht1fm/",
+     "credit": "u/AlanNeedsFixing",
+     "platform": "reddit (comment)",
+     "date": "2026-11-14",
+     "caption": "Lights are on and lots of activity, looks like they’re about to film something",
+     "large": true
+    }
    ]
   },
   {
@@ -239,7 +443,26 @@
    "type": "film",
    "status": "filming",
    "confidence": "high",
-   "cast": "Jennifer Aniston, Peter Dinklage (as Santa), Regina Hall; dir. Olivia Wilde",
+   "cast": [
+    {
+     "name": "Jennifer Aniston",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "Peter Dinklage",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "Regina Hall",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    }
+   ],
    "summary": "Christmas comedy. The Strand outside King's College was dressed with fake snow and ice on 9 and 14 Nov. Aniston's work is reportedly done by mid-December.",
    "dates": {
     "first_seen": "2026-11-09",
@@ -260,7 +483,6 @@
      "approx": false
     }
    ],
-   "photos": [],
    "signage": [],
    "parking_notes": "",
    "references": [
@@ -282,7 +504,28 @@
      "date": "2026-11-24",
      "url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
     }
-   ]
+   ],
+   "crew": [
+    {
+     "name": "Olivia Wilde",
+     "role": "Director",
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "LuckyChap",
+     "role": "Production company",
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    }
+   ],
+   "typical_hours": {
+    "start": "08:00",
+    "end": "18:00",
+    "basis": "estimate",
+    "note": "Typical London location day: crew call ~07:00, shooting ~08:00–18:00. Unit bases are busiest early morning."
+   },
+   "images": []
   },
   {
    "id": "slow-horses-s8",
@@ -295,10 +538,35 @@
    ],
    "company": "See-Saw Films / Apple TV",
    "type": "tv",
-   "status": "wrapping",
+   "status": "wrapped",
    "confidence": "medium",
-   "cast": "Gary Oldman, Jack Lowden, Olivia Cooke; dir. Adam Randall",
-   "summary": "Apple confirmed S8 was shooting in London on 16 Nov. Spotters had a Range Rover crash at Wembley Stadium around 19–22 Nov, and 'PIC' signs at Russell Square earlier. One unverified Reddit comment says the director posted a wrap around 22 Nov, so it's probably done.",
+   "cast": [
+    {
+     "name": "Gary Oldman",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://variety.com/2026/tv/global/slow-horses-more-seasons-jack-lowden-1236948628/"
+    },
+    {
+     "name": "Olivia Cooke",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://variety.com/2026/tv/global/slow-horses-more-seasons-jack-lowden-1236948628/"
+    },
+    {
+     "name": "Jack Lowden",
+     "role": null,
+     "status": "reported",
+     "source_url": "https://www.dailymail.com/news/article-16255227/Slow-Horses-Jack-Lowden-left-dead-spy-drama.html"
+    },
+    {
+     "name": "Michael McElhatton",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.iftn.ie/news/locationsnews/?act1=record&aid=73&force=1&only=1&rid=4297479&tpl=archnews"
+    }
+   ],
+   "summary": "Apple confirmed S8 was shooting in London on 16 Nov. Spotters had a Range Rover crash at Wembley Stadium around 19–22 Nov, and 'PIC' signs at Russell Square earlier. One unverified Reddit comment says the director posted a wrap around 22 Nov, so it's probably done. Update: a spotter linked the director's Instagram post saying S8 wrapped on Sun 22 Nov, so it's now marked wrapped.",
    "dates": {
     "first_seen": "2026-10-31",
     "last_seen": "2026-11-22",
@@ -334,14 +602,6 @@
      "date": "2026-10-31",
      "note": "Lowden & Cooke rooftop scenes (Mail on Sunday footage). Earlier sighting.",
      "approx": true
-    }
-   ],
-   "photos": [
-    {
-     "thumb": "https://preview.redd.it/urab40fhiz2i1.jpeg?width=640&crop=smart&auto=webp&s=6eb62981ef2bffbb5d35caa159ff780df29a9925",
-     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y1zpnj/major_filming_outside_wembley_stadium/",
-     "credit": "u/ArcticBlitz919 on r/whatsfilminginlondon",
-     "caption": "Wembley crash set, 21 Nov"
     }
    ],
    "signage": [
@@ -384,20 +644,79 @@
      "publisher": "r/whatsfilminginlondon",
      "date": "2026-11-22",
      "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y1tqj4/filming_canada_water_update/"
+    },
+    {
+     "title": "Spotter links the S8 director's Instagram post saying they wrapped on Sunday 22 Nov",
+     "publisher": "r/whatsfilminginlondon",
+     "date": "2026-11-23",
+     "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y15g7k/filming_in_canada_water/"
+    }
+   ],
+   "crew": [
+    {
+     "name": "Adam Randall",
+     "role": "Director",
+     "status": "confirmed",
+     "source_url": "https://www.iftn.ie/news/locationsnews/?act1=record&aid=73&force=1&only=1&rid=4297479&tpl=archnews"
+    },
+    {
+     "name": "Eben Bolter",
+     "role": "Director of photography",
+     "status": "confirmed",
+     "source_url": "https://www.fdtimes.com/2026/10/26/slow-horses/"
+    },
+    {
+     "name": "Ben Vanstone",
+     "role": "Writer / EP",
+     "status": "confirmed",
+     "source_url": "https://www.iftn.ie/news/locationsnews/?act1=record&aid=73&force=1&only=1&rid=4297479&tpl=archnews"
+    }
+   ],
+   "typical_hours": {
+    "start": "08:00",
+    "end": "18:00",
+    "basis": "estimate",
+    "note": "DoP Eben Bolter (Oct): in London they take Fridays and Saturdays off and shoot Sundays. Hours are an estimate.",
+    "source_url": "https://www.fdtimes.com/2026/10/26/slow-horses/",
+    "days_off": [
+     "Fri",
+     "Sat"
+    ]
+   },
+   "images": [
+    {
+     "thumb": "https://preview.redd.it/urab40fhiz2i1.jpeg?width=640&crop=smart&auto=webp&s=6eb62981ef2bffbb5d35caa159ff780df29a9925",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y1zpnj/major_filming_outside_wembley_stadium/",
+     "credit": "u/ArcticBlitz919",
+     "platform": "reddit",
+     "date": "2026-11-21",
+     "caption": "Wembley crash set, 21 Nov",
+     "large": false
+    },
+    {
+     "thumb": "https://preview.redd.it/h5mvrzehiz2i1.jpeg?width=640&crop=smart&auto=webp&s=8a7ce920dd2c4222bc3ee1ed988ae90f3573ccd0",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y1zpnj/major_filming_outside_wembley_stadium/",
+     "credit": "u/ArcticBlitz919",
+     "platform": "reddit",
+     "date": "2026-11-21",
+     "caption": "Major filming outside Wembley stadium.",
+     "large": false
     }
    ]
   },
   {
    "id": "mosquito",
-   "title": "Mosquito (probable)",
+   "title": "Disney+/FX drama at The Queens (Mosquito or Far Cry?)",
    "working_title": null,
-   "codenames": [],
-   "company": "20th Television / Hulu Original for Disney+",
+   "codenames": [
+    "GC? (Mosquito's sign code in Bristol, not seen here)"
+   ],
+   "company": "Disney+ / FX (per residents' letters); title unconfirmed",
    "type": "tv",
    "status": "filming",
    "confidence": "medium",
-   "cast": "Nicholas Hoult, Daisy Edgar-Jones; writer Tony McNamara",
-   "summary": "A Disney+ drama blacked out The Queens pub in Crouch End with tents for night interiors, 13–19 Nov. Residents' letters said 'Disney' and Disney had announced Mosquito's UK shoot on 10 Nov. Press link the two, but the production hasn't confirmed it.",
+   "cast": [],
+   "summary": "Residents' letters said a new Disney+/FX drama, and The Queens in Crouch End was tented for night interiors, 13–19 Nov. Two IDs are doing the rounds. One is Mosquito (Hoult/Edgar-Jones), Disney's newest UK start, which press reports suggest. The other is FX's Far Cry: a Redditor says a friend saw it on shoot paperwork. Neither is confirmed. Mosquito's crew used 'GC' (Gilded Curve) signs in Bristol, per a spotter.",
    "dates": {
     "first_seen": "2026-11-10",
     "last_seen": "2026-11-19",
@@ -413,14 +732,6 @@
      "date": "2026-11-16",
      "note": "Pub closed 13–17 Nov; windows tented for day-for-night.",
      "approx": false
-    }
-   ],
-   "photos": [
-    {
-     "thumb": "https://preview.redd.it/oseuhwmy3m1i1.jpeg?width=640&crop=smart&auto=webp&s=197b16deb23ff0d00571faddc0453ac7e244fd0d",
-     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xw7wkx/filming_in_the_queens_head_crouch_end_today/",
-     "credit": "u/makkuro_kurosuke on r/whatsfilminginlondon",
-     "caption": "Tented windows at The Queens, 14 Nov"
     }
    ],
    "signage": [],
@@ -443,8 +754,78 @@
      "publisher": "Screen Daily",
      "date": "2026-11-24",
      "url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "title": "Crouch End (Elder Ave): Disney+/FX letter; 'Far Cry' paperwork claim; Mosquito 'GC' signs",
+     "publisher": "r/whatsfilminginlondon",
+     "date": "2026-11-10",
+     "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xt0s35/crouch_end/"
     }
-   ]
+   ],
+   "crew": [],
+   "typical_hours": {
+    "start": "08:00",
+    "end": "18:00",
+    "basis": "estimate",
+    "note": "Typical London location day: crew call ~07:00, shooting ~08:00–18:00. Unit bases are busiest early morning."
+   },
+   "images": [
+    {
+     "thumb": "https://preview.redd.it/oseuhwmy3m1i1.jpeg?width=640&crop=smart&auto=webp&s=197b16deb23ff0d00571faddc0453ac7e244fd0d",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xw7wkx/filming_in_the_queens_head_crouch_end_today/",
+     "credit": "u/makkuro_kurosuke",
+     "platform": "reddit",
+     "date": "2026-11-14",
+     "caption": "Tented windows at The Queens, 14 Nov",
+     "large": false
+    },
+    {
+     "thumb": "https://preview.redd.it/w4k1m5ny3m1i1.jpeg?width=640&crop=smart&auto=webp&s=9476a25af5a193b4b2f8ac457d90b1186a96da17",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xw7wkx/filming_in_the_queens_head_crouch_end_today/",
+     "credit": "u/makkuro_kurosuke",
+     "platform": "reddit",
+     "date": "2026-11-14",
+     "caption": "Filming in The Queens Head Crouch End today",
+     "large": false
+    },
+    {
+     "thumb": "https://preview.redd.it/i5yho4ny3m1i1.jpeg?width=640&crop=smart&auto=webp&s=6b871bd33b32d81b31b674fdec761b73dbadc47e",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xw7wkx/filming_in_the_queens_head_crouch_end_today/",
+     "credit": "u/makkuro_kurosuke",
+     "platform": "reddit",
+     "date": "2026-11-14",
+     "caption": "Filming in The Queens Head Crouch End today",
+     "large": false
+    },
+    {
+     "thumb": "https://preview.redd.it/zzxzco9d3v0i1.jpeg?width=640&crop=smart&auto=webp&s=5487cd2ec740e126b98afbd5ea20561cf82ae236",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xt0s35/crouch_end/",
+     "credit": "u/Overall_Classroom_75",
+     "platform": "reddit",
+     "date": "2026-11-10",
+     "caption": "Crouch End",
+     "large": false
+    },
+    {
+     "thumb": "https://preview.redd.it/gzbws4q0oc1i1.jpeg?width=1178&format=pjpg&auto=webp&s=4c113be737ecf6b0b7155ae72727bbfc1692d1ed",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xt0s35/crouch_end/19skghlrholy9/",
+     "credit": "u/Familiar-Pea4512",
+     "platform": "reddit (comment)",
+     "date": "2026-11-13",
+     "caption": "Comment photo",
+     "large": true
+    },
+    {
+     "thumb": "https://preview.redd.it/hsaxcbq2oc1i1.jpeg?width=1178&format=pjpg&auto=webp&s=2559aafa446985730476075cfbda11a2fd962ab6",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xt0s35/crouch_end/19skgi0rx7r51/",
+     "credit": "u/Familiar-Pea4512",
+     "platform": "reddit (comment)",
+     "date": "2026-11-13",
+     "caption": "Comment photo",
+     "large": true
+    }
+   ],
+   "cast_note": "Unknown until the title is confirmed. If it's Mosquito: Nicholas Hoult and Daisy Edgar-Jones (Screen Daily). If it's Far Cry: no London sighting of cast has been reported."
   },
   {
    "id": "mummy",
@@ -455,7 +836,32 @@
    "type": "film",
    "status": "filming",
    "confidence": "high",
-   "cast": "Brendan Fraser, Rachel Weisz, John Hannah; dirs. Bettinelli-Olpin & Gillett",
+   "cast": [
+    {
+     "name": "Rachel Weisz",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "Brendan Fraser",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "John Hannah",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "Michael Johnston",
+     "role": null,
+     "status": "reported",
+     "source_url": "https://comicbookmovie.com/monsters/mummy/the-mummy-book-of-the-dead-set-videos-reveal-chaotic-action-scene-and-a-first-look-at-michael-johnston-a230678"
+    }
+   ],
    "summary": "Rachel Weisz was photographed in period costume outside the British Museum on 4 Nov, and a West London action sequence was shot later in the month. Screen lists it as filming in London and Suffolk, ongoing.",
    "dates": {
     "first_seen": "2026-11-04",
@@ -476,7 +882,6 @@
      "approx": false
     }
    ],
-   "photos": [],
    "signage": [],
    "parking_notes": "",
    "references": [
@@ -492,7 +897,28 @@
      "date": "2026-11-24",
      "url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
     }
-   ]
+   ],
+   "crew": [
+    {
+     "name": "Matt Bettinelli-Olpin",
+     "role": "Co-director",
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "Tyler Gillett",
+     "role": "Co-director",
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    }
+   ],
+   "typical_hours": {
+    "start": "08:00",
+    "end": "18:00",
+    "basis": "estimate",
+    "note": "Typical London location day: crew call ~07:00, shooting ~08:00–18:00. Unit bases are busiest early morning."
+   },
+   "images": []
   },
   {
    "id": "gentlemen-s3",
@@ -503,7 +929,86 @@
    "type": "tv",
    "status": "filming",
    "confidence": "high",
-   "cast": "Theo James, Kaya Scodelario, Saffron Burrows, Joely Richardson, Maya Jama",
+   "cast": [
+    {
+     "name": "Theo James",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.whats-on-netflix.com/news/the-gentlemen-season-3-set-photos-saffron-burrows/"
+    },
+    {
+     "name": "Kaya Scodelario",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.whats-on-netflix.com/news/the-gentlemen-season-3-set-photos-saffron-burrows/"
+    },
+    {
+     "name": "Harry Goodwins",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.whats-on-netflix.com/news/the-gentlemen-season-3-set-photos-saffron-burrows/"
+    },
+    {
+     "name": "Saffron Burrows",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.whats-on-netflix.com/news/the-gentlemen-season-3-set-photos-saffron-burrows/"
+    },
+    {
+     "name": "Joely Richardson",
+     "role": null,
+     "status": "reported",
+     "source_url": "https://www.whats-on-netflix.com/news/the-gentlemen-season-3-set-photos-saffron-burrows/"
+    },
+    {
+     "name": "Maya Jama",
+     "role": null,
+     "status": "reported",
+     "source_url": "https://www.whats-on-netflix.com/news/the-gentlemen-season-3-set-photos-saffron-burrows/"
+    },
+    {
+     "name": "Jasmine Blackborow",
+     "role": null,
+     "status": "reported",
+     "source_url": "https://www.whats-on-netflix.com/news/the-gentlemen-season-3-set-photos-saffron-burrows/"
+    },
+    {
+     "name": "Robert Carlyle",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.whats-on-netflix.com/news/the-gentlemen-season-3-set-photos-saffron-burrows/"
+    },
+    {
+     "name": "Elijah Wood",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.whats-on-netflix.com/news/the-gentlemen-season-3-set-photos-saffron-burrows/"
+    },
+    {
+     "name": "Orlando Bloom",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.whats-on-netflix.com/news/the-gentlemen-season-3-set-photos-saffron-burrows/"
+    },
+    {
+     "name": "Dexter Fletcher",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.whats-on-netflix.com/news/the-gentlemen-season-3-set-photos-saffron-burrows/"
+    },
+    {
+     "name": "Bruna Marquezine",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.whats-on-netflix.com/news/the-gentlemen-season-3-set-photos-saffron-burrows/"
+    },
+    {
+     "name": "Ed Speleers",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.whats-on-netflix.com/news/the-gentlemen-season-3-set-photos-saffron-burrows/"
+    }
+   ],
    "summary": "A black-tie ensemble scene was shot at Fenix, 80 Piccadilly, in early November. The cast has also been spotted in Kilburn.",
    "dates": {
     "first_seen": "2026-11-02",
@@ -524,7 +1029,6 @@
      "approx": true
     }
    ],
-   "photos": [],
    "signage": [],
    "parking_notes": "",
    "references": [
@@ -534,7 +1038,22 @@
      "date": "2026-11-05",
      "url": "https://www.whats-on-netflix.com/news/the-gentlemen-season-3-set-photos-saffron-burrows/"
     }
-   ]
+   ],
+   "crew": [
+    {
+     "name": "Guy Ritchie",
+     "role": "Creator; seen on location",
+     "status": "reported",
+     "source_url": "https://www.whats-on-netflix.com/news/the-gentlemen-season-3-set-photos-saffron-burrows/"
+    }
+   ],
+   "typical_hours": {
+    "start": "08:00",
+    "end": "18:00",
+    "basis": "estimate",
+    "note": "Typical London location day: crew call ~07:00, shooting ~08:00–18:00. Unit bases are busiest early morning."
+   },
+   "images": []
   },
   {
    "id": "ministry-of-time",
@@ -548,7 +1067,62 @@
    "type": "tv",
    "status": "filming",
    "confidence": "medium",
-   "cast": "Aoife Hinds, Billy Howle, Hong Chau, Adeel Akhtar",
+   "cast": [
+    {
+     "name": "Aoife Hinds",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.bbc.co.uk/mediacentre/2026/the-ministry-of-time-further-casting"
+    },
+    {
+     "name": "Billy Howle",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.bbc.co.uk/mediacentre/2026/the-ministry-of-time-further-casting"
+    },
+    {
+     "name": "Hong Chau",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.bbc.co.uk/mediacentre/2026/the-ministry-of-time-further-casting"
+    },
+    {
+     "name": "Adeel Akhtar",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.bbc.co.uk/mediacentre/2026/the-ministry-of-time-further-casting"
+    },
+    {
+     "name": "Tamara Lawrance",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.bbc.co.uk/mediacentre/2026/the-ministry-of-time-further-casting"
+    },
+    {
+     "name": "Emily Fairn",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.bbc.co.uk/mediacentre/2026/the-ministry-of-time-further-casting"
+    },
+    {
+     "name": "Josh Finan",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.bbc.co.uk/mediacentre/2026/the-ministry-of-time-further-casting"
+    },
+    {
+     "name": "Aisling Loftus",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.bbc.co.uk/mediacentre/2026/the-ministry-of-time-further-casting"
+    },
+    {
+     "name": "Ciarán Hinds",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.bbc.co.uk/mediacentre/2026/the-ministry-of-time-further-casting"
+    }
+   ],
    "summary": "A Panavision trailer and lighting booms were seen by Northchurch Road with 'BOCLOC' signs on 10–11 Nov. A spotter says BOC is The Ministry of Time's code, and that 'Applecross' signs are used too. The BBC says filming is in and around London.",
    "dates": {
     "first_seen": "2026-11-10",
@@ -567,7 +1141,6 @@
      "approx": true
     }
    ],
-   "photos": [],
    "signage": [
     {
      "text": "BOCLOC",
@@ -598,7 +1171,34 @@
      "date": "2026-09-21",
      "url": "https://www.bbc.co.uk/mediacentre/2026/the-ministry-of-time-further-casting"
     }
-   ]
+   ],
+   "crew": [
+    {
+     "name": "Aneil Karia",
+     "role": "Lead director",
+     "status": "confirmed",
+     "source_url": "https://www.bbc.co.uk/mediacentre/2026/the-ministry-of-time-further-casting"
+    },
+    {
+     "name": "Alice Birch",
+     "role": "Writer",
+     "status": "confirmed",
+     "source_url": "https://www.bbc.co.uk/mediacentre/2026/the-ministry-of-time-further-casting"
+    },
+    {
+     "name": "Frances du Pille",
+     "role": "Producer",
+     "status": "confirmed",
+     "source_url": "https://www.bbc.co.uk/mediacentre/2026/the-ministry-of-time-further-casting"
+    }
+   ],
+   "typical_hours": {
+    "start": "08:00",
+    "end": "18:00",
+    "basis": "estimate",
+    "note": "Typical London location day: crew call ~07:00, shooting ~08:00–18:00. Unit bases are busiest early morning."
+   },
+   "images": []
   },
   {
    "id": "mobland-s3",
@@ -609,7 +1209,26 @@
    "type": "tv",
    "status": "filming",
    "confidence": "high",
-   "cast": "Tom Hardy, Helen Mirren, Pierce Brosnan",
+   "cast": [
+    {
+     "name": "Tom Hardy",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://deadline.com/2026/11/mobland-season-3-starts-shooting-finale-paramount-1237230065/"
+    },
+    {
+     "name": "Helen Mirren",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://deadline.com/2026/11/mobland-season-3-starts-shooting-finale-paramount-1237230065/"
+    },
+    {
+     "name": "Pierce Brosnan",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://deadline.com/2026/11/mobland-season-3-starts-shooting-finale-paramount-1237230065/"
+    }
+   ],
    "summary": "Series 3 started shooting in London around 20 Nov. No street locations have been reported yet; Series 2 used Fitzroy Square.",
    "dates": {
     "first_seen": "2026-11-20",
@@ -619,7 +1238,6 @@
     ]
    },
    "locations": [],
-   "photos": [],
    "signage": [],
    "parking_notes": "",
    "references": [
@@ -635,7 +1253,28 @@
      "date": "2026-11-24",
      "url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
     }
-   ]
+   ],
+   "crew": [
+    {
+     "name": "Ronan Bennett",
+     "role": "Series creator",
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "Jez Butterworth",
+     "role": "Showrunner",
+     "status": "confirmed",
+     "source_url": "https://deadline.com/2026/11/mobland-season-3-starts-shooting-finale-paramount-1237230065/"
+    }
+   ],
+   "typical_hours": {
+    "start": "08:00",
+    "end": "18:00",
+    "basis": "estimate",
+    "note": "Typical London location day: crew call ~07:00, shooting ~08:00–18:00. Unit bases are busiest early morning."
+   },
+   "images": []
   },
   {
    "id": "batman-2",
@@ -648,7 +1287,68 @@
    "type": "film",
    "status": "filming",
    "confidence": "medium",
-   "cast": "Robert Pattinson, Colin Farrell, Sebastian Stan, Jayme Lawson; Steven Soderbergh completing for Matt Reeves",
+   "cast": [
+    {
+     "name": "Robert Pattinson",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://deadline.com/2026/10/robert-pattinson-says-the-batman-part-ii-is-filming-again-1237173078/"
+    },
+    {
+     "name": "Colin Farrell",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://deadline.com/2026/10/robert-pattinson-says-the-batman-part-ii-is-filming-again-1237173078/"
+    },
+    {
+     "name": "Andy Serkis",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://deadline.com/2026/10/robert-pattinson-says-the-batman-part-ii-is-filming-again-1237173078/"
+    },
+    {
+     "name": "Scarlett Johansson",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://deadline.com/2026/10/robert-pattinson-says-the-batman-part-ii-is-filming-again-1237173078/"
+    },
+    {
+     "name": "Sebastian Stan",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://deadline.com/2026/10/robert-pattinson-says-the-batman-part-ii-is-filming-again-1237173078/"
+    },
+    {
+     "name": "Brian Tyree Henry",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://deadline.com/2026/10/robert-pattinson-says-the-batman-part-ii-is-filming-again-1237173078/"
+    },
+    {
+     "name": "Jayme Lawson",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://deadline.com/2026/10/robert-pattinson-says-the-batman-part-ii-is-filming-again-1237173078/"
+    },
+    {
+     "name": "Charles Dance",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://deadline.com/2026/10/robert-pattinson-says-the-batman-part-ii-is-filming-again-1237173078/"
+    },
+    {
+     "name": "Gil Perez-Abraham",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://deadline.com/2026/10/robert-pattinson-says-the-batman-part-ii-is-filming-again-1237173078/"
+    },
+    {
+     "name": "Sebastian Koch",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://deadline.com/2026/10/robert-pattinson-says-the-batman-part-ii-is-filming-again-1237173078/"
+    }
+   ],
    "summary": "Final weeks of principal photography in London, with Screen listing it as June–ongoing. A Bleeding Cool tip linked a 'Semper Vigilans' closure at Central Hall Westminster in October. Earlier Gotham dressing appeared at St Paul's and Bank station.",
    "dates": {
     "first_seen": "2026-10-16",
@@ -669,7 +1369,6 @@
      "approx": false
     }
    ],
-   "photos": [],
    "signage": [],
    "parking_notes": "",
    "references": [
@@ -691,7 +1390,28 @@
      "date": "2026-11-24",
      "url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
     }
-   ]
+   ],
+   "crew": [
+    {
+     "name": "Matt Reeves",
+     "role": "Writer-director",
+     "status": "confirmed",
+     "source_url": "https://deadline.com/2026/10/robert-pattinson-says-the-batman-part-ii-is-filming-again-1237173078/"
+    },
+    {
+     "name": "Steven Soderbergh",
+     "role": "Completing principal photography",
+     "status": "confirmed",
+     "source_url": "https://deadline.com/2026/10/robert-pattinson-says-the-batman-part-ii-is-filming-again-1237173078/"
+    }
+   ],
+   "typical_hours": {
+    "start": "08:00",
+    "end": "18:00",
+    "basis": "estimate",
+    "note": "Typical London location day: crew call ~07:00, shooting ~08:00–18:00. Unit bases are busiest early morning."
+   },
+   "images": []
   },
   {
    "id": "lords-day",
@@ -702,7 +1422,32 @@
    "type": "tv",
    "status": "filming",
    "confidence": "medium",
-   "cast": "Damson Idris, Timothy Spall, Gemma Whelan, Harry Lawtey",
+   "cast": [
+    {
+     "name": "Damson Idris",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "Timothy Spall",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "Gemma Whelan",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "Harry Lawtey",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    }
+   ],
    "summary": "Siege-at-Parliament thriller, listed by Screen as August–ongoing in London. The last public street shoot was around the Palace of Westminster on 22–23 Aug. Nothing new has been reported in November.",
    "dates": {
     "first_seen": "2026-08-22",
@@ -723,7 +1468,6 @@
      "approx": false
     }
    ],
-   "photos": [],
    "signage": [],
    "parking_notes": "",
    "references": [
@@ -739,7 +1483,28 @@
      "date": "2026-11-24",
      "url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
     }
-   ]
+   ],
+   "crew": [
+    {
+     "name": "Ben Chanan",
+     "role": "Series creator",
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "Bad Wolf",
+     "role": "Production company",
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    }
+   ],
+   "typical_hours": {
+    "start": "08:00",
+    "end": "18:00",
+    "basis": "estimate",
+    "note": "Typical London location day: crew call ~07:00, shooting ~08:00–18:00. Unit bases are busiest early morning."
+   },
+   "images": []
   },
   {
    "id": "unknown-canada-water",
@@ -750,7 +1515,7 @@
    "type": "unknown",
    "status": "wrapped",
    "confidence": "low",
-   "cast": "",
+   "cast": [],
    "summary": "Big indoor office set with video village, 20–23 Nov. Extras arrived in corporate clothes (plus one violinist). Catering, parking and cast trailers were in the empty lot behind Tesco, with pink and luminous-yellow BASE/LOC signs, codes not recorded. Spotters guessed Batman (a GCPD car was asked about), but nothing confirms it. It loaded out on 23 Nov.",
    "dates": {
     "first_seen": "2026-11-20",
@@ -779,14 +1544,6 @@
      "approx": true
     }
    ],
-   "photos": [
-    {
-     "thumb": "https://preview.redd.it/qnqbvbp6yx2i1.jpeg?width=640&crop=smart&auto=webp&s=7760657e92aa71d825979397fb84a2ceebab9337",
-     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y1tqj4/filming_canada_water_update/",
-     "credit": "u/AcanthisittaPretty13 on r/whatsfilminginlondon",
-     "caption": "Dock Shed, 21 Nov"
-    }
-   ],
    "signage": [
     {
      "text": "BASE / LOC (codes unrecorded)",
@@ -810,6 +1567,70 @@
      "date": "2026-11-20",
      "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y15g7k/filming_in_canada_water/"
     }
+   ],
+   "crew": [],
+   "cast_note": "Unknown production, so cast and crew are unknown.",
+   "typical_hours": {
+    "start": "08:00",
+    "end": "18:00",
+    "basis": "estimate",
+    "note": "Typical London location day: crew call ~07:00, shooting ~08:00–18:00. Unit bases are busiest early morning."
+   },
+   "images": [
+    {
+     "thumb": "https://preview.redd.it/qnqbvbp6yx2i1.jpeg?width=640&crop=smart&auto=webp&s=7760657e92aa71d825979397fb84a2ceebab9337",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y1tqj4/filming_canada_water_update/",
+     "credit": "u/AcanthisittaPretty13",
+     "platform": "reddit",
+     "date": "2026-11-21",
+     "caption": "Dock Shed, 21 Nov",
+     "large": false
+    },
+    {
+     "thumb": "https://preview.redd.it/iiw6xbp6yx2i1.jpeg?width=640&crop=smart&auto=webp&s=98de4d4019d13c0e529bcc08147a398788ec4427",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y1tqj4/filming_canada_water_update/",
+     "credit": "u/AcanthisittaPretty13",
+     "platform": "reddit",
+     "date": "2026-11-21",
+     "caption": "Filming Canada Water Update",
+     "large": false
+    },
+    {
+     "thumb": "https://preview.redd.it/vwsxdcp6yx2i1.jpeg?width=640&crop=smart&auto=webp&s=fa0b3883cd8da90d257feb2b51da97d8d4b816fa",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y1tqj4/filming_canada_water_update/",
+     "credit": "u/AcanthisittaPretty13",
+     "platform": "reddit",
+     "date": "2026-11-21",
+     "caption": "Filming Canada Water Update",
+     "large": false
+    },
+    {
+     "thumb": "https://preview.redd.it/5ruoox4gp53i1.jpeg?width=3024&format=pjpg&auto=webp&s=021375071aae20286058e81257acb08773b03024",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y1tqj4/filming_canada_water_update/19t0pue2lhkgz/",
+     "credit": "u/AcanthisittaPretty13",
+     "platform": "reddit (comment)",
+     "date": "2026-11-22",
+     "caption": "Oh really! I spotted that they have catering, parking and cast trailers in tge empty lot b",
+     "large": true
+    },
+    {
+     "thumb": "https://preview.redd.it/g91fkbxez63i1.jpeg?width=4284&format=pjpg&auto=webp&s=912d83191aef234badefdfec6e0bdcfb8c9d157f",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y1tqj4/filming_canada_water_update/19t11g5hfdo83/",
+     "credit": "u/AcanthisittaPretty13",
+     "platform": "reddit (comment)",
+     "date": "2026-11-22",
+     "caption": "No - its all in an enclosed private barricaded area- with security at the gate. The cars a",
+     "large": true
+    },
+    {
+     "thumb": "https://preview.redd.it/ikbdcd7wz63i1.jpeg?width=4284&format=pjpg&auto=webp&s=bffd1638482d08daccc4000caca152f3b7734db6",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y1tqj4/filming_canada_water_update/19t11gf5n83j8/",
+     "credit": "u/AcanthisittaPretty13",
+     "platform": "reddit (comment)",
+     "date": "2026-11-22",
+     "caption": "Comment photo",
+     "large": true
+    }
    ]
   },
   {
@@ -823,7 +1644,7 @@
    "type": "unknown",
    "status": "recent",
    "confidence": "low",
-   "cast": "",
+   "cast": [],
    "summary": "Evening shoot in a house's back garden on 24 Nov, the newest sighting. Signs read 'BLY tech', possibly the code plus a technical-vehicles arrow. (Not EastEnders: there's a real Albert Square in Stockwell.)",
    "dates": {
     "first_seen": "2026-11-24",
@@ -839,15 +1660,13 @@
      "kind": "signage",
      "date": "2026-11-24",
      "note": "'BLY tech' arrows.",
-     "approx": false
-    }
-   ],
-   "photos": [
-    {
-     "thumb": "https://preview.redd.it/twrnubba8n3i1.jpeg?width=640&crop=smart&auto=webp&s=b040753f7e22e44babd9aedc3be89979bbb3c165",
-     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y4rxfc/albert_square_stockwell/",
-     "credit": "u/banana-books on r/whatsfilminginlondon",
-     "caption": "Albert Square, 24 Nov"
+     "approx": false,
+     "night": true,
+     "call_time": {
+      "note": "Seen filming in the evening (24 Nov).",
+      "status": "reported",
+      "source_url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y4rxfc/albert_square_stockwell/"
+     }
     }
    ],
    "signage": [
@@ -867,6 +1686,43 @@
      "date": "2026-11-24",
      "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y4rxfc/albert_square_stockwell/"
     }
+   ],
+   "crew": [],
+   "cast_note": "Unknown production, so cast and crew are unknown.",
+   "typical_hours": {
+    "start": "08:00",
+    "end": "18:00",
+    "basis": "estimate",
+    "note": "Typical London location day: crew call ~07:00, shooting ~08:00–18:00. Unit bases are busiest early morning."
+   },
+   "images": [
+    {
+     "thumb": "https://preview.redd.it/twrnubba8n3i1.jpeg?width=640&crop=smart&auto=webp&s=b040753f7e22e44babd9aedc3be89979bbb3c165",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y4rxfc/albert_square_stockwell/",
+     "credit": "u/banana-books",
+     "platform": "reddit",
+     "date": "2026-11-24",
+     "caption": "Albert Square, 24 Nov",
+     "large": false
+    },
+    {
+     "thumb": "https://preview.redd.it/p82yecba8n3i1.jpeg?width=640&crop=smart&auto=webp&s=96af43427a6f88044bfab7a9cb5e8b04963f0e44",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y4rxfc/albert_square_stockwell/",
+     "credit": "u/banana-books",
+     "platform": "reddit",
+     "date": "2026-11-24",
+     "caption": "Albert Square, stockwell?",
+     "large": false
+    },
+    {
+     "thumb": "https://preview.redd.it/jxu5dcba8n3i1.jpeg?width=640&crop=smart&auto=webp&s=1588aa90136b951afa086dcc4ead54232a93a568",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y4rxfc/albert_square_stockwell/",
+     "credit": "u/banana-books",
+     "platform": "reddit",
+     "date": "2026-11-24",
+     "caption": "Albert Square, stockwell?",
+     "large": false
+    }
    ]
   },
   {
@@ -878,7 +1734,7 @@
    "type": "tv",
    "status": "filming",
    "confidence": "low",
-   "cast": "Rumoured: Ashley Walters (unverified)",
+   "cast": [],
    "summary": "Night shoot at St John's Gate on 13 Nov; residents were told it was a new Apple TV project. Another crew on Coldharbour Lane, Brixton, on 16 Nov was also said to be a 'new Apple TV show'. Redditors call it 'The Bailey', but no trade or official source confirms that.",
    "dates": {
     "first_seen": "2026-11-13",
@@ -894,7 +1750,8 @@
      "kind": "set",
      "date": "2026-11-13",
      "note": "Night shoot.",
-     "approx": false
+     "approx": false,
+     "night": true
     },
     {
      "name": "Coldharbour Lane, Brixton",
@@ -905,20 +1762,6 @@
      "date": "2026-11-16",
      "note": "'New Apple TV show with big star apparently'.",
      "approx": true
-    }
-   ],
-   "photos": [
-    {
-     "thumb": "https://preview.redd.it/9y54jk3xrl1i1.jpeg?width=640&crop=smart&auto=webp&s=6364dce6c1968f1d131c4ad7f64f4a831b64a3cd",
-     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xw6858/filming_last_night_at_st_johns_gate/",
-     "credit": "u/niseko on r/whatsfilminginlondon",
-     "caption": "St John's Gate, 13 Nov"
-    },
-    {
-     "thumb": "https://preview.redd.it/4jss3kqvo02i1.jpeg?width=640&crop=smart&auto=webp&s=2566b9538298fdc13c4a1eff9c150ed1ecd4f889",
-     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xxwy5q/coldharbour_lane_brixton_filming/",
-     "credit": "u/misoscoop on r/whatsfilminginlondon",
-     "caption": "Coldharbour Lane, 16 Nov"
     }
    ],
    "signage": [],
@@ -936,6 +1779,43 @@
      "date": "2026-11-16",
      "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xxwy5q/coldharbour_lane_brixton_filming/"
     }
+   ],
+   "crew": [],
+   "cast_note": "Unknown. Reddit rumours of Ashley Walters are unverified.",
+   "typical_hours": {
+    "start": "08:00",
+    "end": "18:00",
+    "basis": "estimate",
+    "note": "Typical London location day: crew call ~07:00, shooting ~08:00–18:00. Unit bases are busiest early morning."
+   },
+   "images": [
+    {
+     "thumb": "https://preview.redd.it/9y54jk3xrl1i1.jpeg?width=640&crop=smart&auto=webp&s=6364dce6c1968f1d131c4ad7f64f4a831b64a3cd",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xw6858/filming_last_night_at_st_johns_gate/",
+     "credit": "u/niseko",
+     "platform": "reddit",
+     "date": "2026-11-14",
+     "caption": "St John's Gate, 13 Nov",
+     "large": false
+    },
+    {
+     "thumb": "https://preview.redd.it/4jss3kqvo02i1.jpeg?width=640&crop=smart&auto=webp&s=2566b9538298fdc13c4a1eff9c150ed1ecd4f889",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xxwy5q/coldharbour_lane_brixton_filming/",
+     "credit": "u/misoscoop",
+     "platform": "reddit",
+     "date": "2026-11-16",
+     "caption": "Coldharbour Lane, 16 Nov",
+     "large": false
+    },
+    {
+     "thumb": "https://preview.redd.it/v32w6k3xrl1i1.jpeg?width=640&crop=smart&auto=webp&s=47c63c5395fa002c047ef6fc93b9217c4baf73d4",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xw6858/filming_last_night_at_st_johns_gate/",
+     "credit": "u/niseko",
+     "platform": "reddit",
+     "date": "2026-11-14",
+     "caption": "Filming last night at St John's Gate",
+     "large": false
+    }
    ]
   },
   {
@@ -949,7 +1829,7 @@
    "type": "unknown",
    "status": "recent",
    "confidence": "low",
-   "cast": "",
+   "cast": [],
    "summary": "Neon-pink crew direction arrows marked 'JJ' around Mint Street Park, Borough, on 9 Nov. One commenter guessed 'the poop movie' (unidentified).",
    "dates": {
     "first_seen": "2026-11-09",
@@ -966,14 +1846,6 @@
      "date": "2026-11-09",
      "note": "Neon pink 'JJ' arrows.",
      "approx": false
-    }
-   ],
-   "photos": [
-    {
-     "thumb": "https://preview.redd.it/85hcyyz1js0i1.jpeg?width=640&crop=smart&auto=webp&s=12f5048e29c470e32e5562e47f5944baa0539665",
-     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xsnhy4/mint_street_park/",
-     "credit": "u/rtts- on r/whatsfilminginlondon",
-     "caption": "Mint Street, 9 Nov"
     }
    ],
    "signage": [
@@ -993,6 +1865,34 @@
      "date": "2026-11-09",
      "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xsnhy4/mint_street_park/"
     }
+   ],
+   "crew": [],
+   "cast_note": "Unknown production, so cast and crew are unknown.",
+   "typical_hours": {
+    "start": "08:00",
+    "end": "18:00",
+    "basis": "estimate",
+    "note": "Typical London location day: crew call ~07:00, shooting ~08:00–18:00. Unit bases are busiest early morning."
+   },
+   "images": [
+    {
+     "thumb": "https://preview.redd.it/85hcyyz1js0i1.jpeg?width=640&crop=smart&auto=webp&s=12f5048e29c470e32e5562e47f5944baa0539665",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xsnhy4/mint_street_park/",
+     "credit": "u/rtts-",
+     "platform": "reddit",
+     "date": "2026-11-09",
+     "caption": "Mint Street, 9 Nov",
+     "large": false
+    },
+    {
+     "thumb": "https://preview.redd.it/aw8t6xz1js0i1.jpeg?width=640&crop=smart&auto=webp&s=2684a069171f371b778f754bed37492528330071",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xsnhy4/mint_street_park/",
+     "credit": "u/rtts-",
+     "platform": "reddit",
+     "date": "2026-11-09",
+     "caption": "Mint Street park?",
+     "large": false
+    }
    ]
   },
   {
@@ -1006,7 +1906,7 @@
    "type": "film",
    "status": "wrapped",
    "confidence": "low",
-   "cast": "",
+   "cast": [],
    "summary": "Neon arrows read 'BTBASE' (code BTB plus unit BASE) on 9–10 Nov. A commenter says it was a short film at the Good View takeaway, not a big production.",
    "dates": {
     "first_seen": "2026-11-09",
@@ -1025,7 +1925,6 @@
      "approx": true
     }
    ],
-   "photos": [],
    "signage": [
     {
      "text": "BTBASE",
@@ -1043,7 +1942,16 @@
      "date": "2026-11-11",
      "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1xtuz4l/filmimg_on_lea_bridge_road_today_and_yesterday/"
     }
-   ]
+   ],
+   "crew": [],
+   "cast_note": "Unknown production, so cast and crew are unknown.",
+   "typical_hours": {
+    "start": "08:00",
+    "end": "18:00",
+    "basis": "estimate",
+    "note": "Typical London location day: crew call ~07:00, shooting ~08:00–18:00. Unit bases are busiest early morning."
+   },
+   "images": []
   },
   {
    "id": "harry-potter-s2",
@@ -1054,7 +1962,26 @@
    "type": "tv",
    "status": "filming",
    "confidence": "medium",
-   "cast": "Dominic McLaughlin, Arabella Stanton, Alastair Stout",
+   "cast": [
+    {
+     "name": "Dominic McLaughlin",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "Arabella Stanton",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "name": "Alastair Stout",
+     "role": null,
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    }
+   ],
    "summary": "Studio-based at Leavesden, just outside London. Screen lists it as July 2025–ongoing; Project Casting says Season 2 is now shooting. Included as a nearby studio, not a street sighting.",
    "dates": {
     "first_seen": "2025-07",
@@ -1075,7 +2002,6 @@
      "approx": false
     }
    ],
-   "photos": [],
    "signage": [],
    "parking_notes": "",
    "references": [
@@ -1085,7 +2011,23 @@
      "date": "2026-11-24",
      "url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
     }
-   ]
+   ],
+   "crew": [
+    {
+     "name": "Francesca Gardiner",
+     "role": "Series creator",
+     "status": "confirmed",
+     "source_url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    }
+   ],
+   "visitable": false,
+   "typical_hours": {
+    "start": "08:00",
+    "end": "18:00",
+    "basis": "estimate",
+    "note": "Closed studio stages, so not visitable."
+   },
+   "images": []
   }
  ]
 }
