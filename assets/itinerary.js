@@ -96,5 +96,5 @@ function textVersion(res,opts){
   return L.join("\n");
 }
 
-window.NFIL_ITIN = {STARTS,plan,people,textVersion,toHHMM,DOW,esc};
+window.NFIL_ITIN = {addDays, STARTS,plan,people,textVersion,toHHMM,DOW,esc};
 })();

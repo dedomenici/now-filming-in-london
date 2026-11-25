@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400&family=Special+Elite&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20261125-2">
 </head>
 <body>
 <div class="sheet">
@@ -139,8 +139,19 @@
 })();
 </script>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-<script src="assets/icons.js"></script>
-<script src="assets/itinerary.js"></script>
-<script src="app.js"></script>
+<script>window.NFIL_BUILD="20261125-2";</script>
+<script src="assets/icons.js?v=20261125-2"></script>
+<script src="assets/itinerary.js?v=20261125-2"></script>
+<script src="app.js?v=20261125-2"></script>
+<script>
+/* Safety net: if a stale cached app.js was loaded (no itinerary wiring), reload once with fresh files. */
+(function(){
+  function stale(){ return window.NFIL_APP_BUILD !== window.NFIL_BUILD; }
+  function bust(){ try{ if(sessionStorage.getItem("nfil-bust")===window.NFIL_BUILD) return false; sessionStorage.setItem("nfil-bust",window.NFIL_BUILD); }catch(e){}
+    var u=new URL(location.href); u.searchParams.set("fresh",Date.now()); location.replace(u.toString()); return true; }
+  window.addEventListener("load",function(){ setTimeout(function(){ if(stale()) bust(); },1500); });
+  ["planBtn","planBtn2"].forEach(function(id){ var b=document.getElementById(id); if(b) b.addEventListener("click",function(){ if(stale() && !bust()){ var sec=document.getElementById("planSec"); if(sec){ sec.hidden=false; sec.scrollIntoView(); } } }); });
+})();
+</script>
 </body>
 </html>

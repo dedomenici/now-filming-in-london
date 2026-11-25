@@ -1,3 +1,5 @@
+window.NFIL_APP_BUILD="20261125-2";
+try{ const u=new URL(location.href); if(u.searchParams.has("fresh")){ u.searchParams.delete("fresh"); history.replaceState(null,"",u.pathname+(u.search||"")+u.hash); } }catch(e){}
 (function(){
 "use strict";
 const I = window.NFIL_ICONS;
@@ -89,7 +91,7 @@ function render(){
     const m=L.marker([l.lat,l.lng],{icon:iconFor(s,l),title:s.title,riseOnHover:true}).addTo(layer);
     const im=smallImgs(s,3);
     m.bindPopup(`<div class="pop"><b>${esc(s.title)}</b><br>${esc(l.name)}<br><small>${esc(l.kind.replace("_"," ").toUpperCase())} · ${s.confidence.toUpperCase()}</small><div>${timingHTML(s,l)}</div>${im.length?`<div class="popimgs">${im.map(i=>thumbHTML(i,74,56)).join("")}</div><small class="cred">📷 ${esc([...new Set(im.map(i=>i.credit))].join(", "))}</small><br>`:""}<button type="button" data-open="${esc(s.id)}" data-goat="marker-card" data-goat-title="${esc(s.title)}">OPEN CALL SHEET CARD</button></div>`);
-    (markersById[s.id] ||= []).push(m);
+    (markersById[s.id] = markersById[s.id] || []).push(m);
     if(l.borough!=="outside London") pts.push([l.lat,l.lng]);
   }));
   $("#mapcount").textContent = `${list.length} PRODUCTIONS · ${pts.length} PINS IN TOWN`;
@@ -186,15 +188,20 @@ let geoStart=null, lastPlan=null, lastOpts=null;
 function setupPlanForm(){
   $("#pStart").innerHTML = Object.entries(IT.STARTS).map(([k,v])=>`<option value="${k}">${esc(v.name.toUpperCase())}</option>`).join("")+`<option value="geo">📍 USE MY LOCATION</option>`;
   $("#pDate").value = londonToday();
-  $("#pStart").addEventListener("change",()=>{ if($("#pStart").value==="geo") locate(); });
+  $("#pStart").addEventListener("change",()=>{ if($("#pStart").value==="geo") locate(generate); else generate(); });
+  ["#pDate","#pTime","#pHours","#pStops","#pRecent"].forEach(id=>$(id).addEventListener("change",()=>{ if(lastPlan) generate(); }));
 }
 function locate(cb){
+  let done=false; const once=f=>(...a)=>{ if(done) return; done=true; f(...a); };
+  const fail=once(msg=>{ $("#pMsg").textContent=msg||"Couldn't get your location (permission off?), so starting from Charing Cross."; $("#pStart").value="charing-cross"; geoStart=null; cb&&cb(); });
+  setTimeout(()=>fail("Location took too long, so starting from Charing Cross. You can pick another start."),12000);
   if(!navigator.geolocation){ $("#pMsg").textContent="No geolocation in this browser, so starting from Charing Cross."; $("#pStart").value="charing-cross"; return; }
   $("#pMsg").textContent="Finding you…";
-  navigator.geolocation.getCurrentPosition(p=>{ geoStart={name:"Your location",lat:+p.coords.latitude.toFixed(4),lng:+p.coords.longitude.toFixed(4)}; $("#pMsg").textContent="Got you. Hit ACTION!"; cb&&cb(); },
-    ()=>{ $("#pMsg").textContent="Couldn't get your location, so starting from Charing Cross."; $("#pStart").value="charing-cross"; cb&&cb(); },{timeout:10000});
+  try{ navigator.geolocation.getCurrentPosition(once(p=>{ geoStart={name:"Your location",lat:+p.coords.latitude.toFixed(4),lng:+p.coords.longitude.toFixed(4)}; $("#pMsg").textContent="Got you. Plan starts from your location."; cb&&cb(); }), ()=>fail(), {timeout:10000,maximumAge:300000}); }catch(e){ fail(); }
 }
-function openPlan(){ $("#planSec").hidden=false; $("#planSec").scrollIntoView({behavior:"smooth"}); }
+function flash(el){ el.classList.remove("flash"); void el.offsetWidth; el.classList.add("flash"); }
+function goTo(el){ const y=el.getBoundingClientRect().top+window.pageYOffset-8; try{ window.scrollTo({top:y,behavior:"smooth"}); }catch(e){ window.scrollTo(0,y); } }
+function openPlan(){ const sec=$("#planSec"); sec.hidden=false; goTo(sec); flash(sec); }
 function readOpts(){
   const sv=$("#pStart").value;
   let start = sv==="geo" ? (geoStart||IT.STARTS["charing-cross"]) : sv.startsWith("@") ? null : IT.STARTS[sv];
@@ -220,18 +227,32 @@ function generate(){
     h+=`</tbody></table></div>`;
     const last=res.stops[res.stops.length-1]; h+=`<div class="planhead">WRAP ≈ ${IT.toHHMM(last.leave)} (ESTIMATE). Travel times are straight-line × 1.3 at walking pace or about 20 km/h by tube/bus, plus 12 min for stations. They're rough; check TfL for real routes.</div>`;
   } else {
-    h+=`<div class="planhead">🎬 <b>NO SOURCED SETS FOR THIS DATE.</b> Nothing has a published schedule or a recent sighting for ${esc(dlabel)} within your hours. Try another date, more hours, or include more recent days. We don't make sets up.</div>`;
+    const alt=[]; for(let k=1;k<=21 && alt.length<3;k++){ const d2=IT.addDays(o.date,k); const r2=IT.plan(DATA,{...o,date:d2}); if(r2.stops.length) alt.push([d2,r2.stops.length]); }
+    const late=res.skipped.filter(c=>c.w.start>=toMinHM(o.startTime)+o.hours*60-60 || c.w.end>toMinHM(o.startTime)+o.hours*60);
+    h+=`<div class="empty">🎬 <b>NO SETS TO VISIT ON ${esc(dlabel)} WITHIN YOUR HOURS.</b><br>No sourced shoot has a published date or a recent sighting that fits ${esc(o.startTime)} + ${o.hours}h. We don't make sets up, so here are real options:
+      <div class="emptybtns">${late.length?`<button type="button" class="minibtn" data-hours="14">INCLUDE THE EVENING (${esc(late[0].l.name)} · ${esc(late[0].w.label)}) ▶</button>`:""}
+      ${alt.map(([d2,n])=>`<button type="button" class="minibtn" data-date="${d2}">PLAN ${esc(fmtD(d2))} (${IT.DOW(d2).toUpperCase()}) · ${n} STOP${n>1?"S":""} ▶</button>`).join("")}
+      ${o.recentDays<14?`<button type="button" class="minibtn" data-recent="14">INCLUDE SIGHTINGS FROM LAST 14 DAYS ▶</button>`:""}</div>
+      Or try the STANDBY list below: those shoots are in London but their streets haven't been reported.</div>`;
   }
   if(res.skipped.length) h+=`<div class="planhead"><small>DIDN'T FIT: ${res.skipped.map(c=>esc(c.l.name)+" ("+esc(c.w.label)+")").join("; ")}</small></div>`;
   if(res.standby.length){
     h+=`<div class="bhead sub">STANDBY: SHOOTING IN LONDON, STREET UNKNOWN (KEEP EYES PEELED)</div><ul class="standby">${res.standby.map(s=>`<li><a href="#" data-open="${esc(s.id)}"><b>${esc(s.title)}</b></a> · last dated source ${fmtD(s.dates?.last_seen)} · watch for: ${esc((s.cast||[]).slice(0,4).map(p=>p.name).join(", ")||"unknown")}</li>`).join("")}</ul>`;
   }
-  $("#planOut").innerHTML=h;
+  const now=new Date().toLocaleTimeString("en-GB",{hour:"2-digit",minute:"2-digit"});
+  h=`<div class="genstamp">✔ PLAN ${res.stops.length?"READY":"CHECKED"} · ${res.stops.length} STOP${res.stops.length===1?"":"S"} · generated ${now}</div>`+h;
+  $("#planOut").innerHTML=h; flash($("#planOut"));
+  $("#planOut").querySelectorAll("[data-date],[data-hours],[data-recent]").forEach(b=>b.addEventListener("click",()=>{
+    if(b.dataset.date) $("#pDate").value=b.dataset.date;
+    if(b.dataset.hours){ const sel=$("#pHours"); const v=[...sel.options].map(x=>x.value).filter(x=>+x>=+b.dataset.hours)[0]||sel.options[sel.options.length-1].value; sel.value=v; }
+    if(b.dataset.recent) $("#pRecent").value=b.dataset.recent;
+    generate(); goTo($("#planOut")); }));
   map.closePopup(); drawRoute(res,o);
   const q=new URLSearchParams({plan:1,d:o.date,s:o.startKey==="geo"&&geoStart?`@${geoStart.lat},${geoStart.lng}`:o.startKey,t:o.startTime,h:o.hours,n:o.maxStops,r:o.recentDays});
   history.replaceState(null,"","?"+q.toString());
   window.__gcTrack && window.__gcTrack("plan-built-"+res.stops.length,"Itinerary built");
 }
+const toMinHM=t=>{ const [a,b]=String(t).split(":").map(Number); return a*60+(b||0); };
 function drawRoute(res,o){
   if(routeLayer) routeLayer.remove(); routeLayer=L.layerGroup().addTo(map);
   const pts=[[o.start.lat,o.start.lng],...res.stops.map(st=>[st.c.l.lat,st.c.l.lng])];
@@ -253,8 +274,10 @@ function applyParams(){
   [["h","#pHours"],["n","#pStops"],["r","#pRecent"]].forEach(([k,sel])=>{ const v=q.get(k); if(v && [...$(sel).options].some(o=>o.value===v||o.text===v)) $(sel).value=v; });
   openPlan(); generate(); return true;
 }
-["#planBtn","#planBtn2"].forEach(b=>$(b).addEventListener("click",e=>{ e.stopPropagation(); openPlan(); if(!lastPlan) generate(); }));
-$("#pGo").addEventListener("click",()=>{ if($("#pStart").value==="geo" && !geoStart) locate(generate); else generate(); });
+["#planBtn","#planBtn2"].forEach(b=>$(b).addEventListener("click",e=>{ e.preventDefault(); if(!DATA){ $("#planSec").hidden=false; $("#planOut").innerHTML='<div class="empty">Loading the call sheet… one moment.</div>'; goTo($("#planSec")); const w=setInterval(()=>{ if(DATA){ clearInterval(w); generate(); openPlan(); } },200); return; } if(!lastPlan) generate(); openPlan(); }));
+$("#pGo").addEventListener("click",()=>{ const b=$("#pGo"); b.textContent="ROLLING…"; setTimeout(()=>{ b.textContent="ACTION! ▶"; },700);
+  const run=()=>{ generate(); goTo($("#planOut")); };
+  if($("#pStart").value==="geo" && !geoStart) locate(run); else run(); });
 $("#pPrint").addEventListener("click",()=>{ document.body.classList.add("printplan"); window.print(); setTimeout(()=>document.body.classList.remove("printplan"),500); });
 $("#pCopy").addEventListener("click",async()=>{ if(!lastPlan) generate(); const t=IT.textVersion(lastPlan,lastOpts)+"\n"+location.href; try{ await navigator.clipboard.writeText(t); $("#pMsg").textContent="Copied. Paste it wherever you like."; }catch(e){ $("#pMsg").textContent="Clipboard blocked. Select the schedule text instead."; } });
 $("#pShare").addEventListener("click",async()=>{ if(!lastPlan) generate(); const url=location.href; if(navigator.share){ try{ await navigator.share({title:"My set-spotting day: Now Filming in London",url}); return; }catch(e){} } try{ await navigator.clipboard.writeText(url); $("#pMsg").textContent="Link copied: "+url; }catch(e){ $("#pMsg").textContent=url; } });
@@ -270,7 +293,7 @@ async function weather(){
   }catch(e){ $("#weather").textContent="LOOK OUT OF THE WINDOW"; }
 }
 
-fetch("data/shoots.json",{cache:"no-cache"}).then(r=>r.json()).then(d=>{
+fetch("data/shoots.json?v="+(window.NFIL_BUILD||"")+"-"+Math.floor(Date.now()/6e5),{cache:"no-cache"}).then(r=>r.json()).then(d=>{
   DATA=d; legend(); initMap(); statics(); render(); setupPlanForm();
   const pts = DATA.shoots.flatMap(s=>(s.locations||[]).filter(l=>l.borough!=="outside London").map(l=>[l.lat,l.lng]));
   if(pts.length) map.fitBounds(pts,{padding:[30,30],maxZoom:13});
