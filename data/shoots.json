@@ -1,7 +1,7 @@
 {
  "app": "Now Filming in London",
- "last_updated": "2026-11-26T08:14:00Z",
- "previous_update": "2026-11-25T01:39:00Z",
+ "last_updated": "2026-11-27T08:13:00Z",
+ "previous_update": "2026-11-26T08:14:00Z",
  "notes": "Only real, sourced sightings. 'approx' pins are placed at the nearest named place when the exact street wasn't published. Confidence: high = trade/official or multiple dated sources; medium = single press source or strong signage match; low = unidentified spotter report.",
  "sources_checked": [
   {
@@ -10,11 +10,11 @@
   },
   {
    "name": "Reddit r/london, r/LondonSocialClub, r/CasualUK search (.json via curl)",
-   "status": "fetch tool timed out this round (curl blocked from box IP)"
+   "status": "fetch tool timed out again this round (curl blocked from box IP)"
   },
   {
    "name": "X public search",
-   "status": "worked but noisy; no dated, located sightings this round"
+   "status": "worked but noisy; only MobLand set-photo chatter (agency photos, not reused)"
   },
   {
    "name": "Facebook groups (e.g. Crouch End Appreciation Society)",
@@ -1130,18 +1130,69 @@
      "role": null,
      "status": "confirmed",
      "source_url": "https://deadline.com/2026/11/mobland-season-3-starts-shooting-finale-paramount-1237230065/"
+    },
+    {
+     "name": "Paddy Considine",
+     "role": "Kevin Harrigan",
+     "status": "reported",
+     "source_url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y5xils/chapel_market_angel_filming_today/19t84p9omn1qa/"
+    },
+    {
+     "name": "Tony Denham",
+     "role": null,
+     "status": "reported",
+     "source_url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y5xils/chapel_market_angel_filming_today/19t7vai76975w/",
+     "note": "Seen next to the chase-scene set at Chapel Market; the spotter didn't know which production it was."
+    },
+    {
+     "name": "Stanley Tucci",
+     "role": "villain (a watch horologist)",
+     "status": "reported",
+     "source_url": "https://www.thenews.com.pk/latest/1425370-stanley-tucci-to-take-the-big-screen-with-mobland"
+    },
+    {
+     "name": "Zlatan Ibrahimovic",
+     "role": "henchman",
+     "status": "reported",
+     "source_url": "https://www.thenews.com.pk/latest/1425370-stanley-tucci-to-take-the-big-screen-with-mobland"
     }
    ],
-   "summary": "Series 3 started shooting in London around 20 Nov. No street locations have been reported yet; Series 2 used Fitzroy Square.",
+   "summary": "Series 3 started shooting in London around 20 Nov. Tom Hardy was photographed on set in London on Tue 24 Nov (TMZ/Page Six; street not given). On 26 Nov a big production with a chase scene was set up around Chapel Market, Angel; several Reddit commenters identified it as MobLand and said they saw Tom Hardy there, one spotted Paddy Considine (Kevin Harrigan) and another saw a sign reading 'Raven Peak'. The News (citing The Sun) reports Stanley Tucci and Zlatan Ibrahimovic have joined Series 3.",
    "dates": {
     "first_seen": "2026-11-20",
-    "last_seen": "2026-11-24",
+    "last_seen": "2026-11-26",
     "expected": [
      "ongoing"
     ]
    },
-   "locations": [],
-   "signage": [],
+   "locations": [
+    {
+     "name": "Chapel Market, Angel",
+     "borough": "Islington",
+     "lat": 51.53349,
+     "lng": -0.10879,
+     "kind": "set",
+     "date": "2026-11-26",
+     "note": "Big production set up around the market on 26 Nov with a chase scene; commenters say MobLand and report seeing Tom Hardy (from ~14:00) and Paddy Considine. Exact streets not given.",
+     "approx": true,
+     "call_time": {
+      "date": "2026-11-26",
+      "note": "Spotters reported the set active from late morning to about 17:00 UTC on 26 Nov (comment times).",
+      "status": "reported",
+      "source_url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y5xils/chapel_market_angel_filming_today/"
+     }
+    }
+   ],
+   "signage": [
+    {
+     "text": "RAVEN PEAK",
+     "colour": "sign (type/colour not described)",
+     "where": "Chapel Market, Angel",
+     "date": "2026-11-26",
+     "source": "Reddit comment (u/adjjda)",
+     "source_url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y5xils/chapel_market_angel_filming_today/19t7wu8m93ret/"
+    }
+   ],
    "parking_notes": "",
    "references": [
     {
@@ -1155,6 +1206,30 @@
      "publisher": "Screen Daily",
      "date": "2026-11-24",
      "url": "https://www.screendaily.com/news/2026-film-and-high-end-tv-productions-shooting-in-the-uk-and-ireland-latest-updates/5212395.article"
+    },
+    {
+     "title": "Chapel market Angel filming today",
+     "publisher": "r/whatsfilminginlondon",
+     "date": "2026-11-26",
+     "url": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y5xils/chapel_market_angel_filming_today/"
+    },
+    {
+     "title": "Tom Hardy Back Filming 'MobLand' Season 3 After Rumors He Was Fired",
+     "publisher": "TMZ",
+     "date": "2026-11-26",
+     "url": "https://www.tmz.com/2026/11/26/tom-hardy-returns-to-mobland-filming/"
+    },
+    {
+     "title": "Tom Hardy puts 'MobLand' drama to rest as he's spotted on set (Backgrid photos, link only)",
+     "publisher": "Page Six",
+     "date": "2026-11-26",
+     "url": "https://pagesix.com/2026/11/26/entertainment/tom-hardy-puts-mobland-drama-to-rest-as-hes-spotted-on-set-for-first-time-since-firing-rumors/"
+    },
+    {
+     "title": "Stanley Tucci to take the big screen with 'MobLand' (citing The Sun)",
+     "publisher": "The News",
+     "date": "2026-11-27",
+     "url": "https://www.thenews.com.pk/latest/1425370-stanley-tucci-to-take-the-big-screen-with-mobland"
     }
    ],
    "crew": [
@@ -1177,7 +1252,17 @@
     "basis": "estimate",
     "note": "Typical London location day: crew call ~07:00, shooting ~08:00–18:00. Unit bases are busiest early morning."
    },
-   "images": []
+   "images": [
+    {
+     "thumb": "https://preview.redd.it/n66g849eb14i1.jpeg?width=3024&format=pjpg&auto=webp&s=337d4026a6388a093380302ac7fd80e0ddc4b1b6",
+     "link": "https://www.reddit.com/r/whatsfilminginlondon/comments/1y5xils/chapel_market_angel_filming_today/19t8mbvubsy2r/",
+     "credit": "u/Zach_3007",
+     "platform": "reddit",
+     "date": "2026-11-26",
+     "caption": "Chapel Market set, 26 Nov (comment photo)",
+     "large": true
+    }
+   ]
   },
   {
    "id": "batman-2",
